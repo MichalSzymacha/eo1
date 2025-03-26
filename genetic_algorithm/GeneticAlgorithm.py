@@ -1,9 +1,11 @@
+import os
 import random
 import numpy as np
 from typing import Callable, List, Tuple
 from genetic_algorithm.Population import Population
 from genetic_algorithm.Individual import Individual
 from utils.file_saver import save_results_to_csv, clear_file
+
 
 class GeneticAlgorithm:
     def __init__(
@@ -23,11 +25,11 @@ class GeneticAlgorithm:
         inversion_prob: float,
         elite_percentage: float,
         objective_function: Callable[[List[float]], float],
-        maximize: bool = True
+        maximize: bool = True,
     ):
         """
         Zarządza podstawowymi ustawieniami i przebiegiem algorytmu genetycznego.
-        
+
         :param var_bounds:krotka (min, max) dla zmiennej
         :param precision: dokładność (np. jeśli kodujemy zmienne binarnie, decyduje o liczbie bitów)
         :param vars_number: liczba zmiennych
@@ -57,25 +59,26 @@ class GeneticAlgorithm:
 
         self.crossover_method = crossover_method
         self.crossover_prob = crossover_prob
-        
+
         self.mutation_method = mutation_method
         self.mutation_prob = mutation_prob
 
         self.inversion_prob = inversion_prob
         self.elite_percentage = elite_percentage
-        
+
         self.objective_function = objective_function
         self.maximize = maximize
 
         self.population = self.initialize_population()
-
 
     def initialize_population(self):
         """
         Inicjalizuje populację. Tutaj decydujemy, jak kodujemy zmienne (np. binarnie).
         Na przykład można zapisać 'chromosom' jako listę bitów lub liczb rzeczywistych.
         """
-        return Population(self.var_bounds, self.precision, self.vars_number, self.pop_size)
+        return Population(
+            self.var_bounds, self.precision, self.vars_number, self.pop_size
+        )
 
     def _evaluate(self):
         """
@@ -84,14 +87,13 @@ class GeneticAlgorithm:
         Jeśli maximize = False (czyli minimalizacja), to często liczymy fitness = 1 / (1 + f(x))
         lub stosujemy inną transformację, by móc używać podobnych mechanizmów selekcji.
         """
-        
+
         if self.maximize:
             self.population.evaluate(self.objective_function)
         else:
             self.population.evaluate(self.objective_function)
             for inv in self.population.population:
-                inv.fitness = 1/(1+inv.fitness)
-
+                inv.fitness = 1 / (1 + inv.fitness)
 
     def _selection(self) -> list:
         """
@@ -116,28 +118,37 @@ class GeneticAlgorithm:
         fitnesses = [ind.fitness for ind in self.population.population]
         total_fitness = sum(fitnesses)
         probabilities = [f / total_fitness for f in fitnesses]
-        new_population = random.choices(self.population.population, weights=probabilities, k=int(self.pop_size*self.selection_percentage))
+        new_population = random.choices(
+            self.population.population,
+            weights=probabilities,
+            k=int(self.pop_size * self.selection_percentage),
+        )
         return new_population
-    
+
     def _selection_tournament(self) -> list:
         """
-        Przykładowa selekcja turniejowa. 
+        Przykładowa selekcja turniejowa.
         Zwraca nową populację (kopie osobników).
         """
         self._evaluate()
         new_population = []
         for i in range(0, self.pop_size, self.tournament_size):
-            winner = max(self.population.population[i:i+self.tournament_size], key=lambda x: x.fitness)
+            winner = max(
+                self.population.population[i : i + self.tournament_size],
+                key=lambda x: x.fitness,
+            )
             new_population.append(winner)
         return new_population
-        
+
     def _selection_best(self) -> list:
         """
         Wybieramy pewien % najlepszych i z nich tworzymy nową populację (bądź dociągamy do pop_size).
         """
         self._evaluate()
         self.population.population.sort(key=lambda x: x.fitness, reverse=True)
-        new_population = self.population.population[:int(self.selection_percentage * self.pop_size)]
+        new_population = self.population.population[
+            : int(self.selection_percentage * self.pop_size)
+        ]
         return new_population
 
     def _crossover(self, parent1, parent2):
@@ -150,12 +161,15 @@ class GeneticAlgorithm:
             elif self.crossover_method == "two_point":
                 return self.population.crossover_two_point(parent1, parent2)
             elif self.crossover_method == "uniform":
-                return self.population.crossover_uniform(parent1, parent2, self.crossover_prob)
+                return self.population.crossover_uniform(
+                    parent1, parent2, self.crossover_prob
+                )
             elif self.crossover_method == "grain":
-                return self.population.crossover_grain(parent1, parent2, self.crossover_prob)
+                return self.population.crossover_grain(
+                    parent1, parent2, self.crossover_prob
+                )
         else:
             return parent1, parent2
-
 
     def _mutation(self, chromosome):
         """
@@ -172,7 +186,7 @@ class GeneticAlgorithm:
                 pass  # brak mutacji
         else:
             return chromosome
-    
+
     def _elite(self, new_population):
         """
         Dodaje elityzm do nowej populacji.
@@ -189,22 +203,25 @@ class GeneticAlgorithm:
         if np.random.rand() < self.inversion_prob:
             chromosome.inversion()
 
-
-
-
-
-    def run(self):
+    def run(self, dir_name="results"):
         """
         Główna pętla – uruchamia algorytm na 'epochs' epok.
         """
-        clear_file("wyniki.csv")
+
+        os.makedirs(dir_name, exist_ok=True)
+        clear_file(f"{dir_name}/wyniki.csv")
+        save_results_to_csv(f"{dir_name}/settings.csv", self.__dict__)
+
         for epoch in range(self.epochs):
             new_population = []
             self._elite(new_population)
             parents = self._selection()
             parents_len = len(parents)
             while len(new_population) < self.pop_size:
-                parent1, parent2 = parents[np.random.randint(parents_len)], parents[np.random.randint(parents_len)]
+                parent1, parent2 = (
+                    parents[np.random.randint(parents_len)],
+                    parents[np.random.randint(parents_len)],
+                )
                 child1, child2 = self._crossover(parent1, parent2)
                 self._mutation(child1)
                 self._mutation(child2)
@@ -213,19 +230,29 @@ class GeneticAlgorithm:
                 new_population.append(child1)
                 new_population.append(child2)
             if len(new_population) > self.pop_size:
-                new_population = new_population[:self.pop_size]
+                new_population = new_population[: self.pop_size]
             self.population.population = new_population
             self._evaluate()
             best_individual = max(self.population.population, key=lambda x: x.fitness)
             mean = np.mean([ind.fitness for ind in self.population.population])
             std = np.std([ind.fitness for ind in self.population.population])
-            save_results_to_csv("wyniki.csv", epoch, best_individual.fitness, mean, std)
-        
+            save_results_to_csv(
+                f"{dir_name}/wyniki.csv",
+                epoch,
+                best_individual.fitness,
+                mean,
+                std,
+            )
+
         best_individual = max(self.population.population, key=lambda x: x.fitness)
-        print(f"Best individual: {best_individual.genes}, fitness: {best_individual.fitness}")
+        print(
+            f"Best individual: {best_individual.genes}, fitness: {best_individual.fitness}"
+        )
         return best_individual.decode(self.var_bounds)
-        
-if __name__ == '__main__':
+
+
+if __name__ == "__main__":
+
     def func(x):
         return x[0] + x[1]
 
@@ -245,7 +272,7 @@ if __name__ == '__main__':
         inversion_prob=0.01,
         elite_percentage=0.1,
         objective_function=func,
-        maximize=True
+        maximize=True,
     )
-    
+
     ga.run()

@@ -1,10 +1,18 @@
+import hashlib
+import os
 import tkinter as tk
 from tkinter import ttk
 import numpy as np
 import time
 from genetic_algorithm.GeneticAlgorithm import GeneticAlgorithm
-from functions.function_selector import get_function_by_name, get_suggested_bounds, FUNCTIONS_MAP
+from functions.function_selector import (
+    get_function_by_name,
+    get_suggested_bounds,
+    FUNCTIONS_MAP,
+)
+from utils.file_saver import save_results_to_csv
 from utils.plotter import plot_iterations, plot_mean_std
+
 
 class App(tk.Tk):
     def __init__(self):
@@ -15,7 +23,9 @@ class App(tk.Tk):
 
         # --- Wybór funkcji benchmarkowej ---
         self.function_var = tk.StringVar(value="rastrigin")
-        self.create_dropdown("Choose function", list(FUNCTIONS_MAP.keys()), self.function_var)
+        self.create_dropdown(
+            "Choose function", list(FUNCTIONS_MAP.keys()), self.function_var
+        )
 
         self.num_parameters_var = tk.IntVar(value=2)
         self.create_input_field("Number of parameters", self.num_parameters_var)
@@ -45,7 +55,11 @@ class App(tk.Tk):
 
         # --- Wybór metody selekcji ---
         self.selection_method_var = tk.StringVar(value="roulette")
-        self.create_dropdown("Selection method", ["roulette", "tournament", "best"], self.selection_method_var)
+        self.create_dropdown(
+            "Selection method",
+            ["roulette", "tournament", "best"],
+            self.selection_method_var,
+        )
         self.selection_percentage_var = tk.DoubleVar(value=0.5)
         self.create_input_field("Selection percentage", self.selection_percentage_var)
         self.tournament_size_var = tk.IntVar(value=3)
@@ -53,28 +67,45 @@ class App(tk.Tk):
 
         # --- Wybór metody krzyżowania ---
         self.crossover_method_var = tk.StringVar(value="one_point")
-        self.create_dropdown("Crossover method",
-                             ["one_point", "two_point", "uniform", "grain"],
-                             self.crossover_method_var)
+        self.create_dropdown(
+            "Crossover method",
+            ["one_point", "two_point", "uniform", "grain"],
+            self.crossover_method_var,
+        )
 
         # --- Wybór metody mutacji ---
         self.mutation_method_var = tk.StringVar(value="one_point")
-        self.create_dropdown("Mutation method",
-                             ["boundary", "one_point", "two_points"], 
-                             self.mutation_method_var)
+        self.create_dropdown(
+            "Mutation method",
+            ["boundary", "one_point", "two_points"],
+            self.mutation_method_var,
+        )
 
         # --- Minimalizacja / Maksymalizacja ---
         self.maximize_var = tk.BooleanVar(value=False)
-        tk.Radiobutton(self, text="Minimization", variable=self.maximize_var, value=False).pack()
-        tk.Radiobutton(self, text="Maximization", variable=self.maximize_var, value=True).pack()
+        tk.Radiobutton(
+            self, text="Minimization", variable=self.maximize_var, value=False
+        ).pack()
+        tk.Radiobutton(
+            self, text="Maximization", variable=self.maximize_var, value=True
+        ).pack()
 
         # --- Przycisk Start ---
         start_button = tk.Button(self, text="Start", command=self.run_ga)
         start_button.pack(pady=10)
 
         # --- Pole na wyniki ---
-        self.result_label = tk.Label(self, text="Best solution: -", font=("Arial", 12))
+        self.result_label = tk.Label(
+            self, text="Best solution: -", font=("Arial", 12), wraplength=480
+        )
         self.result_label.pack(pady=10)
+        copy_button = tk.Button(self, text="Copy result", command=self.copy_result)
+        copy_button.pack(pady=5)
+
+    def copy_result(self):
+        text = self.result_label.cget("text")
+        self.clipboard_clear()
+        self.clipboard_append(text)
 
     def create_input_field(self, label_text, variable):
         frame = tk.Frame(self)
@@ -93,7 +124,9 @@ class App(tk.Tk):
         label = tk.Label(frame, text=label_text, width=25, anchor="w")
         label.pack(side="left")
 
-        dropdown = ttk.Combobox(frame, textvariable=variable, values=options, state="readonly")
+        dropdown = ttk.Combobox(
+            frame, textvariable=variable, values=options, state="readonly"
+        )
         dropdown.pack(side="right", fill="x", expand=True)
 
     def run_ga(self):
@@ -108,7 +141,7 @@ class App(tk.Tk):
 
         # Pobranie sugerowanych granic
         bounds = (self.begin_range_var.get(), self.end_range_var.get())
-        
+
         precision = self.precision_var.get()
         pop_size = self.population_var.get()
         epochs = self.epochs_var.get()
@@ -126,7 +159,7 @@ class App(tk.Tk):
         # Uruchomienie algorytmu
         ga = GeneticAlgorithm(
             var_bounds=bounds,
-            precision = precision,
+            precision=precision,
             vars_number=num_vars,
             pop_size=pop_size,
             epochs=epochs,
@@ -140,15 +173,58 @@ class App(tk.Tk):
             inversion_prob=inversion_prob,
             elite_percentage=elite_percentage,
             objective_function=objective_function,
-            maximize=maximize
+            maximize=maximize,
         )
+
+        # Konwertujemy __dict__ do stringa i generujemy hash
+        # Zbierz parametry w słownik
+        params = {
+            "bounds": bounds,
+            "precision": precision,
+            "pop_size": pop_size,
+            "epochs": epochs,
+            "selection_method": selection_method,
+            "selection_percentage": selection_percentage,
+            "crossover_method": crossover_method,
+            "mutation_method": mutation_method,
+            "crossover_prob": crossover_prob,
+            "mutation_prob": mutation_prob,
+            "inversion_prob": inversion_prob,
+            "elite_percentage": elite_percentage,
+            "maximize": maximize,
+            "tournament_size": tournament_size,
+        }
+
+        # Utwórz uporządkowaną reprezentację (sortując klucze)
+        params_str = str(sorted(params.items()))
+
+        # Oblicz hash MD5 i wybierz pierwsze 8 znaków
+        hash_digest = hashlib.md5(params_str.encode()).hexdigest()[:8]
+
+        print(f"Hash: {hash_digest}", params_str)
+
+        # Tworzymy foldery używając skrótu
+        root_dir = f"results/{function_name}_{hash_digest}"
+        os.makedirs(root_dir, exist_ok=True)
+        dir_name = f"{root_dir}/{len(os.listdir(root_dir))}"
+        os.makedirs(dir_name, exist_ok=True)
+
         time_start = time.time()
-        best_solution = ga.run()
+        best_solution = ga.run(dir_name)
         time_stop = time.time()
         # Wyświetlenie wyniku w GUI
-        self.result_label.config(text=f"Best solution: {best_solution} \n Time: {time_stop-time_start}s")
-        plot_iterations("wyniki.csv")
-        plot_mean_std("wyniki.csv")
+        self.result_label.config(
+            text=f"Best solution: {best_solution} \n Time: {time_stop-time_start}s"
+        )
+        save_results_to_csv(
+            f"{dir_name}/best_solution_vector.csv",
+            best_solution,
+        )
+
+        plot_iterations(f"{dir_name}/wyniki.csv", f"{dir_name}/wykres_iteracji.png")
+        plot_mean_std(
+            f"{dir_name}/wyniki.csv", f"{dir_name}/wykres_sredniej_odchylenia.png"
+        )
 
 
 if __name__ == "__main__":
