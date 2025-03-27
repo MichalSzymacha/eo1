@@ -93,7 +93,7 @@ class GeneticAlgorithm:
         else:
             self.population.evaluate(self.objective_function)
             for inv in self.population.population:
-                inv.fitness = 1 / (1 + inv.fitness)
+                inv.fitness = 1 / inv.fitness
 
     def _selection(self) -> list:
         """
