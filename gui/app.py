@@ -36,7 +36,7 @@ class App(tk.Tk):
         self.create_input_field("Begin of the range", self.begin_range_var)
         self.create_input_field("End of the range", self.end_range_var)
 
-        self.precision_var = tk.DoubleVar(value=0.0001)
+        self.precision_var = tk.DoubleVar(value=5)
         self.create_input_field("Precision", self.precision_var)
 
         self.population_var = tk.IntVar(value=15)
@@ -221,9 +221,9 @@ class App(tk.Tk):
             best_solution,
         )
 
-        plot_iterations(f"{dir_name}/wyniki.csv", f"{dir_name}/wykres_iteracji.png")
+        plot_iterations(f"{dir_name}/wyniki.csv", f"{dir_name}/wykres_iteracji.png", True)
         plot_mean_std(
-            f"{dir_name}/wyniki.csv", f"{dir_name}/wykres_sredniej_odchylenia.png"
+            f"{dir_name}/wyniki.csv", f"{dir_name}/wykres_sredniej_odchylenia.png", True
         )
 
 

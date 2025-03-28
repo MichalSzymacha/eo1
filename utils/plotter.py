@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-def plot_iterations(filename, img_save_path=None):
+def plot_iterations(filename, img_save_path=None, img_show=False):
     # Wczytanie danych z pliku CSV
     df = pd.read_csv(filename)
 
@@ -18,15 +18,17 @@ def plot_iterations(filename, img_save_path=None):
     plt.grid(True)
 
     # Wyświetlenie wykresu
-    if img_save_path:
+    if img_show:
         plt.savefig(img_save_path)
-    else:
         plt.show()
+    else:
+        plt.savefig(img_save_path)
+        
 
     plt.close()
 
 
-def plot_mean_std(filename, img_save_path=None):
+def plot_mean_std(filename, img_save_path=None, img_show=False):
     # Wczytanie danych z pliku CSV
     df = pd.read_csv(filename)
 
@@ -45,9 +47,11 @@ def plot_mean_std(filename, img_save_path=None):
     plt.grid(True)
 
     # Wyświetlenie wykresu
-    if img_save_path:
+    if img_show:
         plt.savefig(img_save_path)
-    else:
         plt.show()
+    else:
+        plt.savefig(img_save_path)
+        
 
     plt.close()
