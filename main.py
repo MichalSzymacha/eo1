@@ -1,5 +1,4 @@
 from gui.app import App
-import numpy as np
 
 def main():
     app = App()

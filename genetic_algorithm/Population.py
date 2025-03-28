@@ -3,6 +3,8 @@ from genetic_algorithm.Individual import Individual
 import math
 import numpy as np
 
+# from Individual import Individual
+
 class Population:
     def __init__(
             self,

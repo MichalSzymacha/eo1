@@ -6,6 +6,9 @@ from genetic_algorithm.Population import Population
 from genetic_algorithm.Individual import Individual
 from utils.file_saver import save_results_to_csv, clear_file
 
+# from Population import Population
+# from Individual import Individual
+
 
 class GeneticAlgorithm:
     def __init__(
@@ -88,12 +91,17 @@ class GeneticAlgorithm:
         lub stosujemy inną transformację, by móc używać podobnych mechanizmów selekcji.
         """
 
-        if self.maximize:
-            self.population.evaluate(self.objective_function)
-        else:
-            self.population.evaluate(self.objective_function)
-            for inv in self.population.population:
-                inv.fitness = 1 / inv.fitness
+        self.population.evaluate(self.objective_function)
+
+        for inv in self.population.population:
+            if self.maximize:
+                inv.fitness = inv.objective_value
+            else:
+                # zabezpieczenie przed inf/nan
+                try:
+                    inv.fitness = 1 / (1 + abs(inv.objective_value))
+                except ZeroDivisionError:
+                    inv.fitness = float("inf")
 
     def _selection(self) -> list:
         """
@@ -254,7 +262,7 @@ class GeneticAlgorithm:
 if __name__ == "__main__":
 
     def func(x):
-        return x[0] + x[1]
+        return x[0]**2 + x[1]**2  
 
     ga = GeneticAlgorithm(
         var_bounds=(0, 300),
@@ -272,7 +280,8 @@ if __name__ == "__main__":
         inversion_prob=0.01,
         elite_percentage=0.1,
         objective_function=func,
-        maximize=True,
+        maximize=False,
     )
 
-    ga.run()
+    best = ga.run()
+    print(f"Best solution: {best}")

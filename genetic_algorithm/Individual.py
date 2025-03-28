@@ -66,7 +66,8 @@ class Individual:
         return var_bounds[0] + int("".join(map(str, gene)), 2) * (var_bounds[1] - var_bounds[0]) / (2**self.size - 1)
 
     def evaluate(self, objective_function, var_bounds):
-        self.fitness = objective_function(self.decode(var_bounds))
+        self.objective_value = objective_function(self.decode(var_bounds))
+        self.fitness = self.objective_value
 
 
 
