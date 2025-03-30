@@ -4,7 +4,7 @@ import numpy as np
 from typing import Callable, List, Tuple
 from genetic_algorithm.Population import Population
 from genetic_algorithm.Individual import Individual
-from utils.file_saver import save_results_to_csv, clear_file
+from utils.file_saver import save_results_to_csv, clear_file, save_results_to_json
 
 # from Population import Population
 # from Individual import Individual
@@ -218,7 +218,7 @@ class GeneticAlgorithm:
 
         os.makedirs(dir_name, exist_ok=True)
         clear_file(f"{dir_name}/wyniki.csv")
-        save_results_to_csv(f"{dir_name}/settings.csv", self.__dict__)
+        save_results_to_json(f"{dir_name}/settings.json", self.__dict__)
 
         for epoch in range(self.epochs):
             new_population = []
@@ -262,7 +262,7 @@ class GeneticAlgorithm:
 if __name__ == "__main__":
 
     def func(x):
-        return x[0]**2 + x[1]**2  
+        return x[0] ** 2 + x[1] ** 2
 
     ga = GeneticAlgorithm(
         var_bounds=(0, 300),

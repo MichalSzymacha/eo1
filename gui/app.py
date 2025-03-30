@@ -1,4 +1,5 @@
 import hashlib
+import json
 import os
 import tkinter as tk
 from tkinter import ttk
@@ -10,7 +11,7 @@ from functions.function_selector import (
     get_suggested_bounds,
     FUNCTIONS_MAP,
 )
-from utils.file_saver import save_results_to_csv
+from utils.file_saver import save_results_to_csv, save_results_to_json
 from utils.plotter import plot_iterations, plot_mean_std
 
 
@@ -93,6 +94,12 @@ class App(tk.Tk):
         # --- Przycisk Start ---
         start_button = tk.Button(self, text="Start", command=self.run_ga)
         start_button.pack(pady=10)
+
+        # --- Przycisk Automate Testing ---
+        auto_test_button = tk.Button(
+            self, text="Automate Testing", command=self.automate_testing
+        )
+        auto_test_button.pack(pady=10)
 
         # --- Pole na wyniki ---
         self.result_label = tk.Label(
@@ -216,14 +223,102 @@ class App(tk.Tk):
         self.result_label.config(
             text=f"Best solution: {best_solution} \n Time: {time_stop-time_start}s"
         )
-        save_results_to_csv(
-            f"{dir_name}/best_solution_vector.csv",
-            best_solution,
-        )
 
-        plot_iterations(f"{dir_name}/wyniki.csv", f"{dir_name}/wykres_iteracji.png", True)
+        result_dict = {
+            "best_solution_vector": best_solution,
+            "time": time_stop - time_start,
+        }
+        save_results_to_json(f"{dir_name}/wyniki.json", result_dict)
+
+        plot_iterations(
+            f"{dir_name}/wyniki.csv", f"{dir_name}/wykres_iteracji.png", True
+        )
         plot_mean_std(
             f"{dir_name}/wyniki.csv", f"{dir_name}/wykres_sredniej_odchylenia.png", True
+        )
+
+    def automate_testing(self):
+        # Przykład: wczytanie konfiguracji z pliku JSON
+        with open("all_configs.json", "r") as f:
+            configurations = json.load(f)
+
+        summary_results = []
+
+        # Iterujemy po każdej konfiguracji
+        for config in configurations:
+            # Aktualizujemy wartości z konfiguracji do zmiennych GUI (lub bezpośrednio do zmiennych lokalnych)
+            bounds = tuple(config["bounds"])  # np. [-500, 500]
+            precision = config["precision"]
+            num_vars = config["vars_number"]
+            pop_size = config["pop_size"]
+            epochs = config["epochs"]
+            selection_method = config["selection_method"]
+            selection_percentage = config["selection_percentage"]
+            tournament_size = config["tournament_size"]
+            crossover_method = config["crossover_method"]
+            crossover_prob = config["crossover_prob"]
+            mutation_method = config["mutation_method"]
+            mutation_prob = config["mutation_prob"]
+            inversion_prob = config["inversion_prob"]
+            elite_percentage = config["elite_percentage"]
+            maximize = config["maximize"]
+
+            best_results = []
+            total_time = 0.0
+            for i in range(10):  # 10 testów dla danej konfiguracji
+                ga = GeneticAlgorithm(
+                    var_bounds=bounds,
+                    precision=precision,
+                    vars_number=num_vars,
+                    pop_size=pop_size,
+                    epochs=epochs,
+                    selection_method=selection_method,
+                    selection_percentage=selection_percentage,
+                    tournament_size=tournament_size,
+                    crossover_method=crossover_method,
+                    crossover_prob=crossover_prob,
+                    mutation_method=mutation_method,
+                    mutation_prob=mutation_prob,
+                    inversion_prob=inversion_prob,
+                    elite_percentage=elite_percentage,
+                    objective_function=get_function_by_name(
+                        self.function_var.get(), num_vars
+                    ),
+                    maximize=maximize,
+                )
+                start_time = time.time()
+                best_solution = ga.run(
+                    dir_name="temp_results"
+                )  # Możesz ustawić folder tymczasowy
+                end_time = time.time()
+                run_time = end_time - start_time
+                total_time += run_time
+
+                # Wartość fitness najlepszego osobnika w danym uruchomieniu:
+                best_fitness = max([ind.fitness for ind in ga.population.population])
+                best_results.append(best_fitness)
+
+            avg_best = sum(best_results) / len(best_results)
+            best_run = min(best_results) if not maximize else max(best_results)
+            worst_run = max(best_results) if not maximize else min(best_results)
+            avg_time = total_time / 10.0
+
+            summary_results.append(
+                {
+                    "configuration": config,
+                    "best_run": best_run,
+                    "avg_best": avg_best,
+                    "worst_run": worst_run,
+                    "avg_time": avg_time,
+                }
+            )
+
+        # Na koniec zapisz zbiorczy raport do pliku lub wyświetl w konsoli
+        with open("automated_test_summary.json", "w") as outfile:
+            json.dump(summary_results, outfile, indent=4)
+
+        print(
+            "Automated testing completed. Summary saved to automated_test_summary.json"
         )
 
 

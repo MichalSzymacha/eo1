@@ -1,0 +1,22 @@
+{
+    "var_bounds": [
+        -32.768,
+        32.768
+    ],
+    "precision": 5,
+    "vars_number": 2,
+    "pop_size": 10,
+    "epochs": 100,
+    "selection_method": "roulette",
+    "selection_percentage": 0.6,
+    "tournament_size": 3,
+    "crossover_method": "two_point",
+    "crossover_prob": 0.6,
+    "mutation_method": "two_point",
+    "mutation_prob": 0.01,
+    "inversion_prob": 0.01,
+    "elite_percentage": 0.1,
+    "objective_function": "<benchmark_functions.benchmark_functions.Ackley object at 0x0000017A144BB4A0>",
+    "maximize": false,
+    "population": "<genetic_algorithm.Population.Population object at 0x0000017A1BAFC050>"
+}

@@ -1,0 +1,17 @@
+{
+    "bounds": [[-32.768, 32.768]],
+    "precision": [5, 8],
+    "vars_number": 2,
+    "pop_size": [10, 100, 500, 1000, 2000],
+    "epochs": [10, 100, 500, 1000, 2000],
+    "selection_method": ["best", "roulette", "tournament"],
+    "selection_percentage": [0.4, 0.6],
+    "tournament_size": [3],
+    "crossover_method": ["one_point", "two_point", "uniform"],
+    "crossover_prob": [0.6, 0.8],
+    "mutation_method": ["one_point", "two_point", "boundary"],
+    "mutation_prob": [0.01, 0.05],
+    "inversion_prob": [0.01, 0.03],
+    "elite_percentage": [0.1, 0.3],
+    "maximize": [false]
+}
