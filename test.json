@@ -1,9 +1,9 @@
 {
-    "bounds": [[-32.768, 32.768]],
+    "bounds": [[-80, 80]],
     "precision": [8],
     "vars_number": 2,
     "pop_size": [100, 1000],
-    "epochs": [100, 1000],
+    "epochs": [200],
     "selection_method": ["best", "roulette", "tournament"],
     "selection_percentage": [0.5],
     "tournament_size": [3],
@@ -15,3 +15,4 @@
     "elite_percentage": [0.15],
     "maximize": [false]
 }
+

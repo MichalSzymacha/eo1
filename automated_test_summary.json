@@ -1,0 +1,4052 @@
+[
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.738219976425171,
+                "run_time": 1.738219976425171
+            },
+            {
+                "best_solution": null,
+                "time": 1.7240169048309326,
+                "run_time": 1.7240169048309326
+            },
+            {
+                "best_solution": null,
+                "time": 1.6810588836669922,
+                "run_time": 1.6810588836669922
+            },
+            {
+                "best_solution": null,
+                "time": 1.7400012016296387,
+                "run_time": 1.7400012016296387
+            },
+            {
+                "best_solution": null,
+                "time": 1.7254762649536133,
+                "run_time": 1.7254762649536133
+            },
+            {
+                "best_solution": null,
+                "time": 1.6811668872833252,
+                "run_time": 1.6811668872833252
+            },
+            {
+                "best_solution": null,
+                "time": 1.685500144958496,
+                "run_time": 1.685500144958496
+            },
+            {
+                "best_solution": null,
+                "time": 1.817838191986084,
+                "run_time": 1.817838191986084
+            },
+            {
+                "best_solution": null,
+                "time": 1.8495779037475586,
+                "run_time": 1.8495779037475586
+            },
+            {
+                "best_solution": null,
+                "time": 1.795670986175537,
+                "run_time": 1.795670986175537
+            }
+        ],
+        "avg_time": 1.7438527345657349
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 2.0864319801330566,
+                "run_time": 2.0864319801330566
+            },
+            {
+                "best_solution": null,
+                "time": 1.7207398414611816,
+                "run_time": 1.7207398414611816
+            },
+            {
+                "best_solution": null,
+                "time": 1.7069432735443115,
+                "run_time": 1.7069432735443115
+            },
+            {
+                "best_solution": null,
+                "time": 1.9219820499420166,
+                "run_time": 1.9219820499420166
+            },
+            {
+                "best_solution": null,
+                "time": 1.6797280311584473,
+                "run_time": 1.6797280311584473
+            },
+            {
+                "best_solution": null,
+                "time": 1.6933403015136719,
+                "run_time": 1.6933403015136719
+            },
+            {
+                "best_solution": null,
+                "time": 1.722416877746582,
+                "run_time": 1.722416877746582
+            },
+            {
+                "best_solution": null,
+                "time": 1.8708579540252686,
+                "run_time": 1.8708579540252686
+            },
+            {
+                "best_solution": null,
+                "time": 1.7772479057312012,
+                "run_time": 1.7772479057312012
+            },
+            {
+                "best_solution": null,
+                "time": 2.0299439430236816,
+                "run_time": 2.0299439430236816
+            }
+        ],
+        "avg_time": 1.8209632158279419
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.8526451587677002,
+                "run_time": 1.8526451587677002
+            },
+            {
+                "best_solution": null,
+                "time": 1.7685010433197021,
+                "run_time": 1.7685010433197021
+            },
+            {
+                "best_solution": null,
+                "time": 1.6744461059570312,
+                "run_time": 1.6744461059570312
+            },
+            {
+                "best_solution": null,
+                "time": 1.6749660968780518,
+                "run_time": 1.6749660968780518
+            },
+            {
+                "best_solution": null,
+                "time": 1.7694499492645264,
+                "run_time": 1.7694499492645264
+            },
+            {
+                "best_solution": null,
+                "time": 1.6718671321868896,
+                "run_time": 1.6718671321868896
+            },
+            {
+                "best_solution": null,
+                "time": 2.6669299602508545,
+                "run_time": 2.6669299602508545
+            },
+            {
+                "best_solution": null,
+                "time": 1.797145128250122,
+                "run_time": 1.797145128250122
+            },
+            {
+                "best_solution": null,
+                "time": 1.666651964187622,
+                "run_time": 1.666651964187622
+            },
+            {
+                "best_solution": null,
+                "time": 1.8081531524658203,
+                "run_time": 1.8081531524658203
+            }
+        ],
+        "avg_time": 1.835075569152832
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.8329799175262451,
+                "run_time": 1.8329799175262451
+            },
+            {
+                "best_solution": null,
+                "time": 1.700758695602417,
+                "run_time": 1.700758695602417
+            },
+            {
+                "best_solution": null,
+                "time": 1.8561689853668213,
+                "run_time": 1.8561689853668213
+            },
+            {
+                "best_solution": null,
+                "time": 1.7104558944702148,
+                "run_time": 1.7104558944702148
+            },
+            {
+                "best_solution": null,
+                "time": 1.7680160999298096,
+                "run_time": 1.7680160999298096
+            },
+            {
+                "best_solution": null,
+                "time": 1.724971055984497,
+                "run_time": 1.724971055984497
+            },
+            {
+                "best_solution": null,
+                "time": 1.687718152999878,
+                "run_time": 1.687718152999878
+            },
+            {
+                "best_solution": null,
+                "time": 1.7033140659332275,
+                "run_time": 1.7033140659332275
+            },
+            {
+                "best_solution": null,
+                "time": 1.857100009918213,
+                "run_time": 1.857100009918213
+            },
+            {
+                "best_solution": null,
+                "time": 1.6933438777923584,
+                "run_time": 1.6933438777923584
+            }
+        ],
+        "avg_time": 1.7534826755523683
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.709733009338379,
+                "run_time": 1.709733009338379
+            },
+            {
+                "best_solution": null,
+                "time": 2.204409122467041,
+                "run_time": 2.204409122467041
+            },
+            {
+                "best_solution": null,
+                "time": 1.7099709510803223,
+                "run_time": 1.7099709510803223
+            },
+            {
+                "best_solution": null,
+                "time": 1.7389869689941406,
+                "run_time": 1.7389869689941406
+            },
+            {
+                "best_solution": null,
+                "time": 1.664564847946167,
+                "run_time": 1.664564847946167
+            },
+            {
+                "best_solution": null,
+                "time": 1.6776769161224365,
+                "run_time": 1.6776769161224365
+            },
+            {
+                "best_solution": null,
+                "time": 1.7136011123657227,
+                "run_time": 1.7136011123657227
+            },
+            {
+                "best_solution": null,
+                "time": 1.7053709030151367,
+                "run_time": 1.7053709030151367
+            },
+            {
+                "best_solution": null,
+                "time": 1.8118071556091309,
+                "run_time": 1.8118071556091309
+            },
+            {
+                "best_solution": null,
+                "time": 1.6927340030670166,
+                "run_time": 1.6927340030670166
+            }
+        ],
+        "avg_time": 1.7628854990005494
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.8359110355377197,
+                "run_time": 1.8359110355377197
+            },
+            {
+                "best_solution": null,
+                "time": 1.8626611232757568,
+                "run_time": 1.8626611232757568
+            },
+            {
+                "best_solution": null,
+                "time": 1.7387597560882568,
+                "run_time": 1.7387597560882568
+            },
+            {
+                "best_solution": null,
+                "time": 1.6829862594604492,
+                "run_time": 1.6829862594604492
+            },
+            {
+                "best_solution": null,
+                "time": 1.6987109184265137,
+                "run_time": 1.6987109184265137
+            },
+            {
+                "best_solution": null,
+                "time": 1.6990950107574463,
+                "run_time": 1.6990950107574463
+            },
+            {
+                "best_solution": null,
+                "time": 1.7040519714355469,
+                "run_time": 1.7040519714355469
+            },
+            {
+                "best_solution": null,
+                "time": 1.8370640277862549,
+                "run_time": 1.8370640277862549
+            },
+            {
+                "best_solution": null,
+                "time": 1.8485369682312012,
+                "run_time": 1.8485369682312012
+            },
+            {
+                "best_solution": null,
+                "time": 1.7293848991394043,
+                "run_time": 1.7293848991394043
+            }
+        ],
+        "avg_time": 1.763716197013855
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.823047161102295,
+                "run_time": 1.823047161102295
+            },
+            {
+                "best_solution": null,
+                "time": 1.7415001392364502,
+                "run_time": 1.7415001392364502
+            },
+            {
+                "best_solution": null,
+                "time": 1.8820412158966064,
+                "run_time": 1.8820412158966064
+            },
+            {
+                "best_solution": null,
+                "time": 1.8837850093841553,
+                "run_time": 1.8837850093841553
+            },
+            {
+                "best_solution": null,
+                "time": 1.8798089027404785,
+                "run_time": 1.8798089027404785
+            },
+            {
+                "best_solution": null,
+                "time": 1.7495090961456299,
+                "run_time": 1.7495090961456299
+            },
+            {
+                "best_solution": null,
+                "time": 1.7554600238800049,
+                "run_time": 1.7554600238800049
+            },
+            {
+                "best_solution": null,
+                "time": 1.7545251846313477,
+                "run_time": 1.7545251846313477
+            },
+            {
+                "best_solution": null,
+                "time": 1.8820087909698486,
+                "run_time": 1.8820087909698486
+            },
+            {
+                "best_solution": null,
+                "time": 1.9104557037353516,
+                "run_time": 1.9104557037353516
+            }
+        ],
+        "avg_time": 1.8262141227722168
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.7525701522827148,
+                "run_time": 1.7525701522827148
+            },
+            {
+                "best_solution": null,
+                "time": 1.9022150039672852,
+                "run_time": 1.9022150039672852
+            },
+            {
+                "best_solution": null,
+                "time": 2.0257489681243896,
+                "run_time": 2.0257489681243896
+            },
+            {
+                "best_solution": null,
+                "time": 1.748075008392334,
+                "run_time": 1.748075008392334
+            },
+            {
+                "best_solution": null,
+                "time": 1.7471418380737305,
+                "run_time": 1.7471418380737305
+            },
+            {
+                "best_solution": null,
+                "time": 1.7608346939086914,
+                "run_time": 1.7608346939086914
+            },
+            {
+                "best_solution": null,
+                "time": 1.9596800804138184,
+                "run_time": 1.9596800804138184
+            },
+            {
+                "best_solution": null,
+                "time": 1.757615089416504,
+                "run_time": 1.757615089416504
+            },
+            {
+                "best_solution": null,
+                "time": 1.9117462635040283,
+                "run_time": 1.9117462635040283
+            },
+            {
+                "best_solution": null,
+                "time": 1.8155426979064941,
+                "run_time": 1.8155426979064941
+            }
+        ],
+        "avg_time": 1.8381169795989991
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.8218061923980713,
+                "run_time": 1.8218061923980713
+            },
+            {
+                "best_solution": null,
+                "time": 1.7425308227539062,
+                "run_time": 1.7425308227539062
+            },
+            {
+                "best_solution": null,
+                "time": 1.8832550048828125,
+                "run_time": 1.8832550048828125
+            },
+            {
+                "best_solution": null,
+                "time": 1.748486042022705,
+                "run_time": 1.748486042022705
+            },
+            {
+                "best_solution": null,
+                "time": 1.771730899810791,
+                "run_time": 1.771730899810791
+            },
+            {
+                "best_solution": null,
+                "time": 1.7603991031646729,
+                "run_time": 1.7603991031646729
+            },
+            {
+                "best_solution": null,
+                "time": 1.880439043045044,
+                "run_time": 1.880439043045044
+            },
+            {
+                "best_solution": null,
+                "time": 1.789113998413086,
+                "run_time": 1.789113998413086
+            },
+            {
+                "best_solution": null,
+                "time": 1.8653788566589355,
+                "run_time": 1.8653788566589355
+            },
+            {
+                "best_solution": null,
+                "time": 1.7460899353027344,
+                "run_time": 1.7460899353027344
+            }
+        ],
+        "avg_time": 1.8009229898452759
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.6980929374694824,
+                "run_time": 1.6980929374694824
+            },
+            {
+                "best_solution": null,
+                "time": 1.6977851390838623,
+                "run_time": 1.6977851390838623
+            },
+            {
+                "best_solution": null,
+                "time": 1.686608076095581,
+                "run_time": 1.686608076095581
+            },
+            {
+                "best_solution": null,
+                "time": 1.698185920715332,
+                "run_time": 1.698185920715332
+            },
+            {
+                "best_solution": null,
+                "time": 2.144170045852661,
+                "run_time": 2.144170045852661
+            },
+            {
+                "best_solution": null,
+                "time": 1.7197787761688232,
+                "run_time": 1.7197787761688232
+            },
+            {
+                "best_solution": null,
+                "time": 1.6627449989318848,
+                "run_time": 1.6627449989318848
+            },
+            {
+                "best_solution": null,
+                "time": 1.7199292182922363,
+                "run_time": 1.7199292182922363
+            },
+            {
+                "best_solution": null,
+                "time": 1.8004589080810547,
+                "run_time": 1.8004589080810547
+            },
+            {
+                "best_solution": null,
+                "time": 1.7859067916870117,
+                "run_time": 1.7859067916870117
+            }
+        ],
+        "avg_time": 1.761366081237793
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.7265360355377197,
+                "run_time": 1.7265360355377197
+            },
+            {
+                "best_solution": null,
+                "time": 1.69913911819458,
+                "run_time": 1.69913911819458
+            },
+            {
+                "best_solution": null,
+                "time": 1.8251187801361084,
+                "run_time": 1.8251187801361084
+            },
+            {
+                "best_solution": null,
+                "time": 1.8718538284301758,
+                "run_time": 1.8718538284301758
+            },
+            {
+                "best_solution": null,
+                "time": 1.7178208827972412,
+                "run_time": 1.7178208827972412
+            },
+            {
+                "best_solution": null,
+                "time": 1.7627379894256592,
+                "run_time": 1.7627379894256592
+            },
+            {
+                "best_solution": null,
+                "time": 1.6867051124572754,
+                "run_time": 1.6867051124572754
+            },
+            {
+                "best_solution": null,
+                "time": 1.827463150024414,
+                "run_time": 1.827463150024414
+            },
+            {
+                "best_solution": null,
+                "time": 1.688309907913208,
+                "run_time": 1.688309907913208
+            },
+            {
+                "best_solution": null,
+                "time": 1.713259220123291,
+                "run_time": 1.713259220123291
+            }
+        ],
+        "avg_time": 1.7518944025039673
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.8453450202941895,
+                "run_time": 1.8453450202941895
+            },
+            {
+                "best_solution": null,
+                "time": 1.8097589015960693,
+                "run_time": 1.8097589015960693
+            },
+            {
+                "best_solution": null,
+                "time": 1.6806719303131104,
+                "run_time": 1.6806719303131104
+            },
+            {
+                "best_solution": null,
+                "time": 1.7199859619140625,
+                "run_time": 1.7199859619140625
+            },
+            {
+                "best_solution": null,
+                "time": 1.7719371318817139,
+                "run_time": 1.7719371318817139
+            },
+            {
+                "best_solution": null,
+                "time": 1.6604740619659424,
+                "run_time": 1.6604740619659424
+            },
+            {
+                "best_solution": null,
+                "time": 1.7716538906097412,
+                "run_time": 1.7716538906097412
+            },
+            {
+                "best_solution": null,
+                "time": 1.6905169486999512,
+                "run_time": 1.6905169486999512
+            },
+            {
+                "best_solution": null,
+                "time": 1.6913657188415527,
+                "run_time": 1.6913657188415527
+            },
+            {
+                "best_solution": null,
+                "time": 1.8205349445343018,
+                "run_time": 1.8205349445343018
+            }
+        ],
+        "avg_time": 1.7462244510650635
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.8094580173492432,
+                "run_time": 1.8094580173492432
+            },
+            {
+                "best_solution": null,
+                "time": 1.7238218784332275,
+                "run_time": 1.7238218784332275
+            },
+            {
+                "best_solution": null,
+                "time": 1.9012389183044434,
+                "run_time": 1.9012389183044434
+            },
+            {
+                "best_solution": null,
+                "time": 1.69569993019104,
+                "run_time": 1.69569993019104
+            },
+            {
+                "best_solution": null,
+                "time": 1.8479418754577637,
+                "run_time": 1.8479418754577637
+            },
+            {
+                "best_solution": null,
+                "time": 1.8444030284881592,
+                "run_time": 1.8444030284881592
+            },
+            {
+                "best_solution": null,
+                "time": 1.7937638759613037,
+                "run_time": 1.7937638759613037
+            },
+            {
+                "best_solution": null,
+                "time": 1.7196898460388184,
+                "run_time": 1.7196898460388184
+            },
+            {
+                "best_solution": null,
+                "time": 1.8352079391479492,
+                "run_time": 1.8352079391479492
+            },
+            {
+                "best_solution": null,
+                "time": 1.8629329204559326,
+                "run_time": 1.8629329204559326
+            }
+        ],
+        "avg_time": 1.8034158229827881
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.7552549839019775,
+                "run_time": 1.7552549839019775
+            },
+            {
+                "best_solution": null,
+                "time": 1.7742526531219482,
+                "run_time": 1.7742526531219482
+            },
+            {
+                "best_solution": null,
+                "time": 1.698253870010376,
+                "run_time": 1.698253870010376
+            },
+            {
+                "best_solution": null,
+                "time": 1.984503984451294,
+                "run_time": 1.984503984451294
+            },
+            {
+                "best_solution": null,
+                "time": 1.7049050331115723,
+                "run_time": 1.7049050331115723
+            },
+            {
+                "best_solution": null,
+                "time": 1.8741581439971924,
+                "run_time": 1.8741581439971924
+            },
+            {
+                "best_solution": null,
+                "time": 1.7152678966522217,
+                "run_time": 1.7152678966522217
+            },
+            {
+                "best_solution": null,
+                "time": 1.93123459815979,
+                "run_time": 1.93123459815979
+            },
+            {
+                "best_solution": null,
+                "time": 1.8446249961853027,
+                "run_time": 1.8446249961853027
+            },
+            {
+                "best_solution": null,
+                "time": 1.783949851989746,
+                "run_time": 1.783949851989746
+            }
+        ],
+        "avg_time": 1.8066406011581422
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.7379541397094727,
+                "run_time": 1.7379541397094727
+            },
+            {
+                "best_solution": null,
+                "time": 1.7140188217163086,
+                "run_time": 1.7140188217163086
+            },
+            {
+                "best_solution": null,
+                "time": 1.8314428329467773,
+                "run_time": 1.8314428329467773
+            },
+            {
+                "best_solution": null,
+                "time": 1.7023019790649414,
+                "run_time": 1.7023019790649414
+            },
+            {
+                "best_solution": null,
+                "time": 1.715090274810791,
+                "run_time": 1.715090274810791
+            },
+            {
+                "best_solution": null,
+                "time": 1.72072172164917,
+                "run_time": 1.72072172164917
+            },
+            {
+                "best_solution": null,
+                "time": 1.7099580764770508,
+                "run_time": 1.7099580764770508
+            },
+            {
+                "best_solution": null,
+                "time": 1.7363100051879883,
+                "run_time": 1.7363100051879883
+            },
+            {
+                "best_solution": null,
+                "time": 1.7513489723205566,
+                "run_time": 1.7513489723205566
+            },
+            {
+                "best_solution": null,
+                "time": 1.6787300109863281,
+                "run_time": 1.6787300109863281
+            }
+        ],
+        "avg_time": 1.7297876834869386
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.8291971683502197,
+                "run_time": 1.8291971683502197
+            },
+            {
+                "best_solution": null,
+                "time": 1.893604040145874,
+                "run_time": 1.893604040145874
+            },
+            {
+                "best_solution": null,
+                "time": 1.7585687637329102,
+                "run_time": 1.7585687637329102
+            },
+            {
+                "best_solution": null,
+                "time": 2.113233804702759,
+                "run_time": 2.113233804702759
+            },
+            {
+                "best_solution": null,
+                "time": 1.8983571529388428,
+                "run_time": 1.8983571529388428
+            },
+            {
+                "best_solution": null,
+                "time": 1.9091787338256836,
+                "run_time": 1.9091787338256836
+            },
+            {
+                "best_solution": null,
+                "time": 1.7635209560394287,
+                "run_time": 1.7635209560394287
+            },
+            {
+                "best_solution": null,
+                "time": 1.9227819442749023,
+                "run_time": 1.9227819442749023
+            },
+            {
+                "best_solution": null,
+                "time": 1.8848769664764404,
+                "run_time": 1.8848769664764404
+            },
+            {
+                "best_solution": null,
+                "time": 1.878593921661377,
+                "run_time": 1.878593921661377
+            }
+        ],
+        "avg_time": 1.8851913452148437
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.8085010051727295,
+                "run_time": 1.8085010051727295
+            },
+            {
+                "best_solution": null,
+                "time": 1.7637419700622559,
+                "run_time": 1.7637419700622559
+            },
+            {
+                "best_solution": null,
+                "time": 1.8103532791137695,
+                "run_time": 1.8103532791137695
+            },
+            {
+                "best_solution": null,
+                "time": 1.7621071338653564,
+                "run_time": 1.7621071338653564
+            },
+            {
+                "best_solution": null,
+                "time": 1.8588192462921143,
+                "run_time": 1.8588192462921143
+            },
+            {
+                "best_solution": null,
+                "time": 1.764944076538086,
+                "run_time": 1.764944076538086
+            },
+            {
+                "best_solution": null,
+                "time": 1.7946488857269287,
+                "run_time": 1.7946488857269287
+            },
+            {
+                "best_solution": null,
+                "time": 1.8205368518829346,
+                "run_time": 1.8205368518829346
+            },
+            {
+                "best_solution": null,
+                "time": 1.7526741027832031,
+                "run_time": 1.7526741027832031
+            },
+            {
+                "best_solution": null,
+                "time": 1.8821070194244385,
+                "run_time": 1.8821070194244385
+            }
+        ],
+        "avg_time": 1.8018433570861816
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.867253065109253,
+                "run_time": 1.867253065109253
+            },
+            {
+                "best_solution": null,
+                "time": 1.775918960571289,
+                "run_time": 1.775918960571289
+            },
+            {
+                "best_solution": null,
+                "time": 1.8885931968688965,
+                "run_time": 1.8885931968688965
+            },
+            {
+                "best_solution": null,
+                "time": 1.7619431018829346,
+                "run_time": 1.7619431018829346
+            },
+            {
+                "best_solution": null,
+                "time": 1.8170146942138672,
+                "run_time": 1.8170146942138672
+            },
+            {
+                "best_solution": null,
+                "time": 1.8484232425689697,
+                "run_time": 1.8484232425689697
+            },
+            {
+                "best_solution": null,
+                "time": 1.7460558414459229,
+                "run_time": 1.7460558414459229
+            },
+            {
+                "best_solution": null,
+                "time": 1.887096881866455,
+                "run_time": 1.887096881866455
+            },
+            {
+                "best_solution": null,
+                "time": 1.7534911632537842,
+                "run_time": 1.7534911632537842
+            },
+            {
+                "best_solution": null,
+                "time": 1.8948678970336914,
+                "run_time": 1.8948678970336914
+            }
+        ],
+        "avg_time": 1.8240658044815063
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.8190500736236572,
+                "run_time": 1.8190500736236572
+            },
+            {
+                "best_solution": null,
+                "time": 1.8311498165130615,
+                "run_time": 1.8311498165130615
+            },
+            {
+                "best_solution": null,
+                "time": 1.6938621997833252,
+                "run_time": 1.6938621997833252
+            },
+            {
+                "best_solution": null,
+                "time": 1.7301828861236572,
+                "run_time": 1.7301828861236572
+            },
+            {
+                "best_solution": null,
+                "time": 1.7604660987854004,
+                "run_time": 1.7604660987854004
+            },
+            {
+                "best_solution": null,
+                "time": 1.6858880519866943,
+                "run_time": 1.6858880519866943
+            },
+            {
+                "best_solution": null,
+                "time": 1.813141107559204,
+                "run_time": 1.813141107559204
+            },
+            {
+                "best_solution": null,
+                "time": 1.7803962230682373,
+                "run_time": 1.7803962230682373
+            },
+            {
+                "best_solution": null,
+                "time": 1.8018200397491455,
+                "run_time": 1.8018200397491455
+            },
+            {
+                "best_solution": null,
+                "time": 1.6824440956115723,
+                "run_time": 1.6824440956115723
+            }
+        ],
+        "avg_time": 1.7598400592803956
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.821000099182129,
+                "run_time": 1.821000099182129
+            },
+            {
+                "best_solution": null,
+                "time": 1.690835952758789,
+                "run_time": 1.690835952758789
+            },
+            {
+                "best_solution": null,
+                "time": 1.71868896484375,
+                "run_time": 1.71868896484375
+            },
+            {
+                "best_solution": null,
+                "time": 1.8103280067443848,
+                "run_time": 1.8103280067443848
+            },
+            {
+                "best_solution": null,
+                "time": 1.678562879562378,
+                "run_time": 1.678562879562378
+            },
+            {
+                "best_solution": null,
+                "time": 1.683290958404541,
+                "run_time": 1.683290958404541
+            },
+            {
+                "best_solution": null,
+                "time": 1.68989896774292,
+                "run_time": 1.68989896774292
+            },
+            {
+                "best_solution": null,
+                "time": 1.8224668502807617,
+                "run_time": 1.8224668502807617
+            },
+            {
+                "best_solution": null,
+                "time": 1.8177928924560547,
+                "run_time": 1.8177928924560547
+            },
+            {
+                "best_solution": null,
+                "time": 1.6871471405029297,
+                "run_time": 1.6871471405029297
+            }
+        ],
+        "avg_time": 1.7420012712478639
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.7256879806518555,
+                "run_time": 1.7256879806518555
+            },
+            {
+                "best_solution": null,
+                "time": 1.6855669021606445,
+                "run_time": 1.6855669021606445
+            },
+            {
+                "best_solution": null,
+                "time": 1.6630101203918457,
+                "run_time": 1.6630101203918457
+            },
+            {
+                "best_solution": null,
+                "time": 1.8263370990753174,
+                "run_time": 1.8263370990753174
+            },
+            {
+                "best_solution": null,
+                "time": 1.841285228729248,
+                "run_time": 1.841285228729248
+            },
+            {
+                "best_solution": null,
+                "time": 1.7852001190185547,
+                "run_time": 1.7852001190185547
+            },
+            {
+                "best_solution": null,
+                "time": 1.6893446445465088,
+                "run_time": 1.6893446445465088
+            },
+            {
+                "best_solution": null,
+                "time": 1.683588981628418,
+                "run_time": 1.683588981628418
+            },
+            {
+                "best_solution": null,
+                "time": 1.7424571514129639,
+                "run_time": 1.7424571514129639
+            },
+            {
+                "best_solution": null,
+                "time": 2.0612919330596924,
+                "run_time": 2.0612919330596924
+            }
+        ],
+        "avg_time": 1.770377016067505
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.7726151943206787,
+                "run_time": 1.7726151943206787
+            },
+            {
+                "best_solution": null,
+                "time": 1.828512191772461,
+                "run_time": 1.828512191772461
+            },
+            {
+                "best_solution": null,
+                "time": 1.9405269622802734,
+                "run_time": 1.9405269622802734
+            },
+            {
+                "best_solution": null,
+                "time": 1.8716390132904053,
+                "run_time": 1.8716390132904053
+            },
+            {
+                "best_solution": null,
+                "time": 1.7427687644958496,
+                "run_time": 1.7427687644958496
+            },
+            {
+                "best_solution": null,
+                "time": 2.058011293411255,
+                "run_time": 2.058011293411255
+            },
+            {
+                "best_solution": null,
+                "time": 1.712054967880249,
+                "run_time": 1.712054967880249
+            },
+            {
+                "best_solution": null,
+                "time": 1.7158100605010986,
+                "run_time": 1.7158100605010986
+            },
+            {
+                "best_solution": null,
+                "time": 1.7481420040130615,
+                "run_time": 1.7481420040130615
+            },
+            {
+                "best_solution": null,
+                "time": 1.6865861415863037,
+                "run_time": 1.6865861415863037
+            }
+        ],
+        "avg_time": 1.8076666593551636
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.7114989757537842,
+                "run_time": 1.7114989757537842
+            },
+            {
+                "best_solution": null,
+                "time": 1.7049648761749268,
+                "run_time": 1.7049648761749268
+            },
+            {
+                "best_solution": null,
+                "time": 1.7401318550109863,
+                "run_time": 1.7401318550109863
+            },
+            {
+                "best_solution": null,
+                "time": 1.713061809539795,
+                "run_time": 1.713061809539795
+            },
+            {
+                "best_solution": null,
+                "time": 1.8554461002349854,
+                "run_time": 1.8554461002349854
+            },
+            {
+                "best_solution": null,
+                "time": 1.8447108268737793,
+                "run_time": 1.8447108268737793
+            },
+            {
+                "best_solution": null,
+                "time": 1.844048023223877,
+                "run_time": 1.844048023223877
+            },
+            {
+                "best_solution": null,
+                "time": 1.7903752326965332,
+                "run_time": 1.7903752326965332
+            },
+            {
+                "best_solution": null,
+                "time": 1.7845330238342285,
+                "run_time": 1.7845330238342285
+            },
+            {
+                "best_solution": null,
+                "time": 1.8373818397521973,
+                "run_time": 1.8373818397521973
+            }
+        ],
+        "avg_time": 1.7826152563095092
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.713576078414917,
+                "run_time": 1.713576078414917
+            },
+            {
+                "best_solution": null,
+                "time": 1.7145211696624756,
+                "run_time": 1.7145211696624756
+            },
+            {
+                "best_solution": null,
+                "time": 1.7170820236206055,
+                "run_time": 1.7170820236206055
+            },
+            {
+                "best_solution": null,
+                "time": 2.0791947841644287,
+                "run_time": 2.0791947841644287
+            },
+            {
+                "best_solution": null,
+                "time": 1.7872912883758545,
+                "run_time": 1.7872912883758545
+            },
+            {
+                "best_solution": null,
+                "time": 1.8105552196502686,
+                "run_time": 1.8105552196502686
+            },
+            {
+                "best_solution": null,
+                "time": 1.8370449542999268,
+                "run_time": 1.8370449542999268
+            },
+            {
+                "best_solution": null,
+                "time": 1.7528400421142578,
+                "run_time": 1.7528400421142578
+            },
+            {
+                "best_solution": null,
+                "time": 2.174058198928833,
+                "run_time": 2.174058198928833
+            },
+            {
+                "best_solution": null,
+                "time": 1.7110342979431152,
+                "run_time": 1.7110342979431152
+            }
+        ],
+        "avg_time": 1.8297198057174682
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.9117939472198486,
+                "run_time": 1.9117939472198486
+            },
+            {
+                "best_solution": null,
+                "time": 1.8012747764587402,
+                "run_time": 1.8012747764587402
+            },
+            {
+                "best_solution": null,
+                "time": 1.7598950862884521,
+                "run_time": 1.7598950862884521
+            },
+            {
+                "best_solution": null,
+                "time": 1.8867487907409668,
+                "run_time": 1.8867487907409668
+            },
+            {
+                "best_solution": null,
+                "time": 1.797217845916748,
+                "run_time": 1.797217845916748
+            },
+            {
+                "best_solution": null,
+                "time": 1.7358238697052002,
+                "run_time": 1.7358238697052002
+            },
+            {
+                "best_solution": null,
+                "time": 1.8289670944213867,
+                "run_time": 1.8289670944213867
+            },
+            {
+                "best_solution": null,
+                "time": 1.8755748271942139,
+                "run_time": 1.8755748271942139
+            },
+            {
+                "best_solution": null,
+                "time": 1.7527408599853516,
+                "run_time": 1.7527408599853516
+            },
+            {
+                "best_solution": null,
+                "time": 2.423948049545288,
+                "run_time": 2.423948049545288
+            }
+        ],
+        "avg_time": 1.8773985147476195
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.7964777946472168,
+                "run_time": 1.7964777946472168
+            },
+            {
+                "best_solution": null,
+                "time": 1.8209161758422852,
+                "run_time": 1.8209161758422852
+            },
+            {
+                "best_solution": null,
+                "time": 1.791050910949707,
+                "run_time": 1.791050910949707
+            },
+            {
+                "best_solution": null,
+                "time": 1.8419461250305176,
+                "run_time": 1.8419461250305176
+            },
+            {
+                "best_solution": null,
+                "time": 1.7921819686889648,
+                "run_time": 1.7921819686889648
+            },
+            {
+                "best_solution": null,
+                "time": 1.942206859588623,
+                "run_time": 1.942206859588623
+            },
+            {
+                "best_solution": null,
+                "time": 1.8285481929779053,
+                "run_time": 1.8285481929779053
+            },
+            {
+                "best_solution": null,
+                "time": 1.9030890464782715,
+                "run_time": 1.9030890464782715
+            },
+            {
+                "best_solution": null,
+                "time": 2.6112961769104004,
+                "run_time": 2.6112961769104004
+            },
+            {
+                "best_solution": null,
+                "time": 2.1191301345825195,
+                "run_time": 2.1191301345825195
+            }
+        ],
+        "avg_time": 1.944684338569641
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 100,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 1.911280870437622,
+                "run_time": 1.911280870437622
+            },
+            {
+                "best_solution": null,
+                "time": 1.7669103145599365,
+                "run_time": 1.7669103145599365
+            },
+            {
+                "best_solution": null,
+                "time": 1.9261550903320312,
+                "run_time": 1.9261550903320312
+            },
+            {
+                "best_solution": null,
+                "time": 1.8462648391723633,
+                "run_time": 1.8462648391723633
+            },
+            {
+                "best_solution": null,
+                "time": 1.9195659160614014,
+                "run_time": 1.9195659160614014
+            },
+            {
+                "best_solution": null,
+                "time": 2.71411395072937,
+                "run_time": 2.71411395072937
+            },
+            {
+                "best_solution": null,
+                "time": 1.9070618152618408,
+                "run_time": 1.9070618152618408
+            },
+            {
+                "best_solution": null,
+                "time": 1.8905110359191895,
+                "run_time": 1.8905110359191895
+            },
+            {
+                "best_solution": null,
+                "time": 2.3216769695281982,
+                "run_time": 2.3216769695281982
+            },
+            {
+                "best_solution": null,
+                "time": 1.7741179466247559,
+                "run_time": 1.7741179466247559
+            }
+        ],
+        "avg_time": 1.997765874862671
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 16.82590413093567,
+                "run_time": 16.82590413093567
+            },
+            {
+                "best_solution": null,
+                "time": 16.94275403022766,
+                "run_time": 16.94275403022766
+            },
+            {
+                "best_solution": null,
+                "time": 16.536850929260254,
+                "run_time": 16.536850929260254
+            },
+            {
+                "best_solution": null,
+                "time": 17.036679983139038,
+                "run_time": 17.036679983139038
+            },
+            {
+                "best_solution": null,
+                "time": 18.80661392211914,
+                "run_time": 18.80661392211914
+            },
+            {
+                "best_solution": null,
+                "time": 17.38501214981079,
+                "run_time": 17.38501214981079
+            },
+            {
+                "best_solution": null,
+                "time": 16.715853929519653,
+                "run_time": 16.715853929519653
+            },
+            {
+                "best_solution": null,
+                "time": 16.97843623161316,
+                "run_time": 16.97843623161316
+            },
+            {
+                "best_solution": null,
+                "time": 17.070775747299194,
+                "run_time": 17.070775747299194
+            },
+            {
+                "best_solution": null,
+                "time": 16.898531198501587,
+                "run_time": 16.898531198501587
+            }
+        ],
+        "avg_time": 17.119741225242613
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.051463842391968,
+                "run_time": 17.051463842391968
+            },
+            {
+                "best_solution": null,
+                "time": 17.450325965881348,
+                "run_time": 17.450325965881348
+            },
+            {
+                "best_solution": null,
+                "time": 18.327960968017578,
+                "run_time": 18.327960968017578
+            },
+            {
+                "best_solution": null,
+                "time": 17.179280042648315,
+                "run_time": 17.179280042648315
+            },
+            {
+                "best_solution": null,
+                "time": 17.183202028274536,
+                "run_time": 17.183202028274536
+            },
+            {
+                "best_solution": null,
+                "time": 16.812562942504883,
+                "run_time": 16.812562942504883
+            },
+            {
+                "best_solution": null,
+                "time": 16.85768699645996,
+                "run_time": 16.85768699645996
+            },
+            {
+                "best_solution": null,
+                "time": 17.285839080810547,
+                "run_time": 17.285839080810547
+            },
+            {
+                "best_solution": null,
+                "time": 16.459808111190796,
+                "run_time": 16.459808111190796
+            },
+            {
+                "best_solution": null,
+                "time": 16.636005878448486,
+                "run_time": 16.636005878448486
+            }
+        ],
+        "avg_time": 17.124413585662843
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.406260013580322,
+                "run_time": 17.406260013580322
+            },
+            {
+                "best_solution": null,
+                "time": 16.770217895507812,
+                "run_time": 16.770217895507812
+            },
+            {
+                "best_solution": null,
+                "time": 17.06128692626953,
+                "run_time": 17.06128692626953
+            },
+            {
+                "best_solution": null,
+                "time": 16.929253816604614,
+                "run_time": 16.929253816604614
+            },
+            {
+                "best_solution": null,
+                "time": 16.882336854934692,
+                "run_time": 16.882336854934692
+            },
+            {
+                "best_solution": null,
+                "time": 17.050960779190063,
+                "run_time": 17.050960779190063
+            },
+            {
+                "best_solution": null,
+                "time": 17.093201875686646,
+                "run_time": 17.093201875686646
+            },
+            {
+                "best_solution": null,
+                "time": 16.780153036117554,
+                "run_time": 16.780153036117554
+            },
+            {
+                "best_solution": null,
+                "time": 16.665246963500977,
+                "run_time": 16.665246963500977
+            },
+            {
+                "best_solution": null,
+                "time": 16.83692693710327,
+                "run_time": 16.83692693710327
+            }
+        ],
+        "avg_time": 16.94758450984955
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.155704259872437,
+                "run_time": 17.155704259872437
+            },
+            {
+                "best_solution": null,
+                "time": 17.199159145355225,
+                "run_time": 17.199159145355225
+            },
+            {
+                "best_solution": null,
+                "time": 17.30636167526245,
+                "run_time": 17.30636167526245
+            },
+            {
+                "best_solution": null,
+                "time": 17.679397106170654,
+                "run_time": 17.679397106170654
+            },
+            {
+                "best_solution": null,
+                "time": 17.026066064834595,
+                "run_time": 17.026066064834595
+            },
+            {
+                "best_solution": null,
+                "time": 17.894561052322388,
+                "run_time": 17.894561052322388
+            },
+            {
+                "best_solution": null,
+                "time": 17.306545972824097,
+                "run_time": 17.306545972824097
+            },
+            {
+                "best_solution": null,
+                "time": 17.124509811401367,
+                "run_time": 17.124509811401367
+            },
+            {
+                "best_solution": null,
+                "time": 17.033740997314453,
+                "run_time": 17.033740997314453
+            },
+            {
+                "best_solution": null,
+                "time": 17.7197687625885,
+                "run_time": 17.7197687625885
+            }
+        ],
+        "avg_time": 17.344581484794617
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.112446069717407,
+                "run_time": 17.112446069717407
+            },
+            {
+                "best_solution": null,
+                "time": 16.92576003074646,
+                "run_time": 16.92576003074646
+            },
+            {
+                "best_solution": null,
+                "time": 16.74700903892517,
+                "run_time": 16.74700903892517
+            },
+            {
+                "best_solution": null,
+                "time": 16.85468292236328,
+                "run_time": 16.85468292236328
+            },
+            {
+                "best_solution": null,
+                "time": 16.85536003112793,
+                "run_time": 16.85536003112793
+            },
+            {
+                "best_solution": null,
+                "time": 17.840521097183228,
+                "run_time": 17.840521097183228
+            },
+            {
+                "best_solution": null,
+                "time": 17.08297109603882,
+                "run_time": 17.08297109603882
+            },
+            {
+                "best_solution": null,
+                "time": 17.543729066848755,
+                "run_time": 17.543729066848755
+            },
+            {
+                "best_solution": null,
+                "time": 18.28467035293579,
+                "run_time": 18.28467035293579
+            },
+            {
+                "best_solution": null,
+                "time": 16.94200611114502,
+                "run_time": 16.94200611114502
+            }
+        ],
+        "avg_time": 17.218915581703186
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 18.354016065597534,
+                "run_time": 18.354016065597534
+            },
+            {
+                "best_solution": null,
+                "time": 17.408102989196777,
+                "run_time": 17.408102989196777
+            },
+            {
+                "best_solution": null,
+                "time": 17.194512844085693,
+                "run_time": 17.194512844085693
+            },
+            {
+                "best_solution": null,
+                "time": 17.13353395462036,
+                "run_time": 17.13353395462036
+            },
+            {
+                "best_solution": null,
+                "time": 17.55161762237549,
+                "run_time": 17.55161762237549
+            },
+            {
+                "best_solution": null,
+                "time": 17.125682830810547,
+                "run_time": 17.125682830810547
+            },
+            {
+                "best_solution": null,
+                "time": 17.513987064361572,
+                "run_time": 17.513987064361572
+            },
+            {
+                "best_solution": null,
+                "time": 17.199424028396606,
+                "run_time": 17.199424028396606
+            },
+            {
+                "best_solution": null,
+                "time": 17.180065155029297,
+                "run_time": 17.180065155029297
+            },
+            {
+                "best_solution": null,
+                "time": 17.28501796722412,
+                "run_time": 17.28501796722412
+            }
+        ],
+        "avg_time": 17.3945960521698
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.614048957824707,
+                "run_time": 17.614048957824707
+            },
+            {
+                "best_solution": null,
+                "time": 17.54328489303589,
+                "run_time": 17.54328489303589
+            },
+            {
+                "best_solution": null,
+                "time": 17.57184100151062,
+                "run_time": 17.57184100151062
+            },
+            {
+                "best_solution": null,
+                "time": 17.906469106674194,
+                "run_time": 17.906469106674194
+            },
+            {
+                "best_solution": null,
+                "time": 17.92674684524536,
+                "run_time": 17.92674684524536
+            },
+            {
+                "best_solution": null,
+                "time": 17.332926988601685,
+                "run_time": 17.332926988601685
+            },
+            {
+                "best_solution": null,
+                "time": 17.512414932250977,
+                "run_time": 17.512414932250977
+            },
+            {
+                "best_solution": null,
+                "time": 17.513776063919067,
+                "run_time": 17.513776063919067
+            },
+            {
+                "best_solution": null,
+                "time": 17.461031913757324,
+                "run_time": 17.461031913757324
+            },
+            {
+                "best_solution": null,
+                "time": 17.66656804084778,
+                "run_time": 17.66656804084778
+            }
+        ],
+        "avg_time": 17.60491087436676
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.502684831619263,
+                "run_time": 17.502684831619263
+            },
+            {
+                "best_solution": null,
+                "time": 17.50872015953064,
+                "run_time": 17.50872015953064
+            },
+            {
+                "best_solution": null,
+                "time": 17.727143049240112,
+                "run_time": 17.727143049240112
+            },
+            {
+                "best_solution": null,
+                "time": 17.319172859191895,
+                "run_time": 17.319172859191895
+            },
+            {
+                "best_solution": null,
+                "time": 17.625133991241455,
+                "run_time": 17.625133991241455
+            },
+            {
+                "best_solution": null,
+                "time": 17.578704833984375,
+                "run_time": 17.578704833984375
+            },
+            {
+                "best_solution": null,
+                "time": 18.12519884109497,
+                "run_time": 18.12519884109497
+            },
+            {
+                "best_solution": null,
+                "time": 18.15554928779602,
+                "run_time": 18.15554928779602
+            },
+            {
+                "best_solution": null,
+                "time": 18.322063207626343,
+                "run_time": 18.322063207626343
+            },
+            {
+                "best_solution": null,
+                "time": 17.588589906692505,
+                "run_time": 17.588589906692505
+            }
+        ],
+        "avg_time": 17.74529609680176
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "best",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.714748859405518,
+                "run_time": 17.714748859405518
+            },
+            {
+                "best_solution": null,
+                "time": 17.34866690635681,
+                "run_time": 17.34866690635681
+            },
+            {
+                "best_solution": null,
+                "time": 17.34067392349243,
+                "run_time": 17.34067392349243
+            },
+            {
+                "best_solution": null,
+                "time": 17.74370503425598,
+                "run_time": 17.74370503425598
+            },
+            {
+                "best_solution": null,
+                "time": 17.719006061553955,
+                "run_time": 17.719006061553955
+            },
+            {
+                "best_solution": null,
+                "time": 17.971697092056274,
+                "run_time": 17.971697092056274
+            },
+            {
+                "best_solution": null,
+                "time": 17.534748077392578,
+                "run_time": 17.534748077392578
+            },
+            {
+                "best_solution": null,
+                "time": 17.57548975944519,
+                "run_time": 17.57548975944519
+            },
+            {
+                "best_solution": null,
+                "time": 17.61855411529541,
+                "run_time": 17.61855411529541
+            },
+            {
+                "best_solution": null,
+                "time": 17.812785863876343,
+                "run_time": 17.812785863876343
+            }
+        ],
+        "avg_time": 17.63800756931305
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 16.778515100479126,
+                "run_time": 16.778515100479126
+            },
+            {
+                "best_solution": null,
+                "time": 16.948624849319458,
+                "run_time": 16.948624849319458
+            },
+            {
+                "best_solution": null,
+                "time": 16.985984086990356,
+                "run_time": 16.985984086990356
+            },
+            {
+                "best_solution": null,
+                "time": 17.072882890701294,
+                "run_time": 17.072882890701294
+            },
+            {
+                "best_solution": null,
+                "time": 17.11142325401306,
+                "run_time": 17.11142325401306
+            },
+            {
+                "best_solution": null,
+                "time": 17.129931926727295,
+                "run_time": 17.129931926727295
+            },
+            {
+                "best_solution": null,
+                "time": 17.096638917922974,
+                "run_time": 17.096638917922974
+            },
+            {
+                "best_solution": null,
+                "time": 17.4885036945343,
+                "run_time": 17.4885036945343
+            },
+            {
+                "best_solution": null,
+                "time": 17.42017102241516,
+                "run_time": 17.42017102241516
+            },
+            {
+                "best_solution": null,
+                "time": 16.937913179397583,
+                "run_time": 16.937913179397583
+            }
+        ],
+        "avg_time": 17.09705889225006
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.043654918670654,
+                "run_time": 17.043654918670654
+            },
+            {
+                "best_solution": null,
+                "time": 17.728702783584595,
+                "run_time": 17.728702783584595
+            },
+            {
+                "best_solution": null,
+                "time": 17.41378426551819,
+                "run_time": 17.41378426551819
+            },
+            {
+                "best_solution": null,
+                "time": 17.460460901260376,
+                "run_time": 17.460460901260376
+            },
+            {
+                "best_solution": null,
+                "time": 17.278006076812744,
+                "run_time": 17.278006076812744
+            },
+            {
+                "best_solution": null,
+                "time": 17.297340869903564,
+                "run_time": 17.297340869903564
+            },
+            {
+                "best_solution": null,
+                "time": 16.57096004486084,
+                "run_time": 16.57096004486084
+            },
+            {
+                "best_solution": null,
+                "time": 17.305063009262085,
+                "run_time": 17.305063009262085
+            },
+            {
+                "best_solution": null,
+                "time": 16.875165939331055,
+                "run_time": 16.875165939331055
+            },
+            {
+                "best_solution": null,
+                "time": 17.08940577507019,
+                "run_time": 17.08940577507019
+            }
+        ],
+        "avg_time": 17.20625445842743
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.044593811035156,
+                "run_time": 17.044593811035156
+            },
+            {
+                "best_solution": null,
+                "time": 17.753934621810913,
+                "run_time": 17.753934621810913
+            },
+            {
+                "best_solution": null,
+                "time": 16.969166040420532,
+                "run_time": 16.969166040420532
+            },
+            {
+                "best_solution": null,
+                "time": 17.83556032180786,
+                "run_time": 17.83556032180786
+            },
+            {
+                "best_solution": null,
+                "time": 16.769283771514893,
+                "run_time": 16.769283771514893
+            },
+            {
+                "best_solution": null,
+                "time": 16.95814824104309,
+                "run_time": 16.95814824104309
+            },
+            {
+                "best_solution": null,
+                "time": 17.3907208442688,
+                "run_time": 17.3907208442688
+            },
+            {
+                "best_solution": null,
+                "time": 16.83896541595459,
+                "run_time": 16.83896541595459
+            },
+            {
+                "best_solution": null,
+                "time": 17.059911966323853,
+                "run_time": 17.059911966323853
+            },
+            {
+                "best_solution": null,
+                "time": 17.07093906402588,
+                "run_time": 17.07093906402588
+            }
+        ],
+        "avg_time": 17.169122409820556
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.309203386306763,
+                "run_time": 17.309203386306763
+            },
+            {
+                "best_solution": null,
+                "time": 17.531913995742798,
+                "run_time": 17.531913995742798
+            },
+            {
+                "best_solution": null,
+                "time": 17.542346000671387,
+                "run_time": 17.542346000671387
+            },
+            {
+                "best_solution": null,
+                "time": 16.979154109954834,
+                "run_time": 16.979154109954834
+            },
+            {
+                "best_solution": null,
+                "time": 17.271326065063477,
+                "run_time": 17.271326065063477
+            },
+            {
+                "best_solution": null,
+                "time": 17.81162691116333,
+                "run_time": 17.81162691116333
+            },
+            {
+                "best_solution": null,
+                "time": 17.496062994003296,
+                "run_time": 17.496062994003296
+            },
+            {
+                "best_solution": null,
+                "time": 17.25003695487976,
+                "run_time": 17.25003695487976
+            },
+            {
+                "best_solution": null,
+                "time": 17.5791118144989,
+                "run_time": 17.5791118144989
+            },
+            {
+                "best_solution": null,
+                "time": 17.8797869682312,
+                "run_time": 17.8797869682312
+            }
+        ],
+        "avg_time": 17.465056920051573
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 16.9702730178833,
+                "run_time": 16.9702730178833
+            },
+            {
+                "best_solution": null,
+                "time": 17.03770613670349,
+                "run_time": 17.03770613670349
+            },
+            {
+                "best_solution": null,
+                "time": 17.44053316116333,
+                "run_time": 17.44053316116333
+            },
+            {
+                "best_solution": null,
+                "time": 17.507411003112793,
+                "run_time": 17.507411003112793
+            },
+            {
+                "best_solution": null,
+                "time": 17.102725982666016,
+                "run_time": 17.102725982666016
+            },
+            {
+                "best_solution": null,
+                "time": 17.943490743637085,
+                "run_time": 17.943490743637085
+            },
+            {
+                "best_solution": null,
+                "time": 17.165945053100586,
+                "run_time": 17.165945053100586
+            },
+            {
+                "best_solution": null,
+                "time": 17.38625407218933,
+                "run_time": 17.38625407218933
+            },
+            {
+                "best_solution": null,
+                "time": 17.068604946136475,
+                "run_time": 17.068604946136475
+            },
+            {
+                "best_solution": null,
+                "time": 17.24095582962036,
+                "run_time": 17.24095582962036
+            }
+        ],
+        "avg_time": 17.286389994621278
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.096597909927368,
+                "run_time": 17.096597909927368
+            },
+            {
+                "best_solution": null,
+                "time": 17.07990789413452,
+                "run_time": 17.07990789413452
+            },
+            {
+                "best_solution": null,
+                "time": 17.251210927963257,
+                "run_time": 17.251210927963257
+            },
+            {
+                "best_solution": null,
+                "time": 18.058420181274414,
+                "run_time": 18.058420181274414
+            },
+            {
+                "best_solution": null,
+                "time": 17.42731809616089,
+                "run_time": 17.42731809616089
+            },
+            {
+                "best_solution": null,
+                "time": 17.25757098197937,
+                "run_time": 17.25757098197937
+            },
+            {
+                "best_solution": null,
+                "time": 17.375223875045776,
+                "run_time": 17.375223875045776
+            },
+            {
+                "best_solution": null,
+                "time": 17.065221309661865,
+                "run_time": 17.065221309661865
+            },
+            {
+                "best_solution": null,
+                "time": 17.286311864852905,
+                "run_time": 17.286311864852905
+            },
+            {
+                "best_solution": null,
+                "time": 17.30830430984497,
+                "run_time": 17.30830430984497
+            }
+        ],
+        "avg_time": 17.320608735084534
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 18.134962797164917,
+                "run_time": 18.134962797164917
+            },
+            {
+                "best_solution": null,
+                "time": 17.796814680099487,
+                "run_time": 17.796814680099487
+            },
+            {
+                "best_solution": null,
+                "time": 17.740988731384277,
+                "run_time": 17.740988731384277
+            },
+            {
+                "best_solution": null,
+                "time": 18.030730962753296,
+                "run_time": 18.030730962753296
+            },
+            {
+                "best_solution": null,
+                "time": 17.8471040725708,
+                "run_time": 17.8471040725708
+            },
+            {
+                "best_solution": null,
+                "time": 17.664960145950317,
+                "run_time": 17.664960145950317
+            },
+            {
+                "best_solution": null,
+                "time": 17.461432695388794,
+                "run_time": 17.461432695388794
+            },
+            {
+                "best_solution": null,
+                "time": 18.11051607131958,
+                "run_time": 18.11051607131958
+            },
+            {
+                "best_solution": null,
+                "time": 18.08622908592224,
+                "run_time": 18.08622908592224
+            },
+            {
+                "best_solution": null,
+                "time": 17.73191809654236,
+                "run_time": 17.73191809654236
+            }
+        ],
+        "avg_time": 17.860565733909606
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.563658952713013,
+                "run_time": 17.563658952713013
+            },
+            {
+                "best_solution": null,
+                "time": 17.65186595916748,
+                "run_time": 17.65186595916748
+            },
+            {
+                "best_solution": null,
+                "time": 17.896257877349854,
+                "run_time": 17.896257877349854
+            },
+            {
+                "best_solution": null,
+                "time": 17.743124961853027,
+                "run_time": 17.743124961853027
+            },
+            {
+                "best_solution": null,
+                "time": 17.50618577003479,
+                "run_time": 17.50618577003479
+            },
+            {
+                "best_solution": null,
+                "time": 17.70961904525757,
+                "run_time": 17.70961904525757
+            },
+            {
+                "best_solution": null,
+                "time": 17.76075792312622,
+                "run_time": 17.76075792312622
+            },
+            {
+                "best_solution": null,
+                "time": 17.635769844055176,
+                "run_time": 17.635769844055176
+            },
+            {
+                "best_solution": null,
+                "time": 17.83173108100891,
+                "run_time": 17.83173108100891
+            },
+            {
+                "best_solution": null,
+                "time": 18.780294179916382,
+                "run_time": 18.780294179916382
+            }
+        ],
+        "avg_time": 17.80792655944824
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "roulette",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.80155897140503,
+                "run_time": 17.80155897140503
+            },
+            {
+                "best_solution": null,
+                "time": 17.550547122955322,
+                "run_time": 17.550547122955322
+            },
+            {
+                "best_solution": null,
+                "time": 18.61940097808838,
+                "run_time": 18.61940097808838
+            },
+            {
+                "best_solution": null,
+                "time": 17.833863019943237,
+                "run_time": 17.833863019943237
+            },
+            {
+                "best_solution": null,
+                "time": 17.833478927612305,
+                "run_time": 17.833478927612305
+            },
+            {
+                "best_solution": null,
+                "time": 18.282826900482178,
+                "run_time": 18.282826900482178
+            },
+            {
+                "best_solution": null,
+                "time": 17.72140598297119,
+                "run_time": 17.72140598297119
+            },
+            {
+                "best_solution": null,
+                "time": 17.746692180633545,
+                "run_time": 17.746692180633545
+            },
+            {
+                "best_solution": null,
+                "time": 17.885879039764404,
+                "run_time": 17.885879039764404
+            },
+            {
+                "best_solution": null,
+                "time": 17.242613792419434,
+                "run_time": 17.242613792419434
+            }
+        ],
+        "avg_time": 17.8518266916275
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 16.85071110725403,
+                "run_time": 16.85071110725403
+            },
+            {
+                "best_solution": null,
+                "time": 17.48124098777771,
+                "run_time": 17.48124098777771
+            },
+            {
+                "best_solution": null,
+                "time": 17.598352193832397,
+                "run_time": 17.598352193832397
+            },
+            {
+                "best_solution": null,
+                "time": 16.9832181930542,
+                "run_time": 16.9832181930542
+            },
+            {
+                "best_solution": null,
+                "time": 17.172801971435547,
+                "run_time": 17.172801971435547
+            },
+            {
+                "best_solution": null,
+                "time": 17.14400291442871,
+                "run_time": 17.14400291442871
+            },
+            {
+                "best_solution": null,
+                "time": 17.01132893562317,
+                "run_time": 17.01132893562317
+            },
+            {
+                "best_solution": null,
+                "time": 17.12207794189453,
+                "run_time": 17.12207794189453
+            },
+            {
+                "best_solution": null,
+                "time": 16.988616943359375,
+                "run_time": 16.988616943359375
+            },
+            {
+                "best_solution": null,
+                "time": 16.95379900932312,
+                "run_time": 16.95379900932312
+            }
+        ],
+        "avg_time": 17.130615019798277
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.14237904548645,
+                "run_time": 17.14237904548645
+            },
+            {
+                "best_solution": null,
+                "time": 16.990015983581543,
+                "run_time": 16.990015983581543
+            },
+            {
+                "best_solution": null,
+                "time": 17.19192600250244,
+                "run_time": 17.19192600250244
+            },
+            {
+                "best_solution": null,
+                "time": 16.93781614303589,
+                "run_time": 16.93781614303589
+            },
+            {
+                "best_solution": null,
+                "time": 17.845498085021973,
+                "run_time": 17.845498085021973
+            },
+            {
+                "best_solution": null,
+                "time": 16.96313762664795,
+                "run_time": 16.96313762664795
+            },
+            {
+                "best_solution": null,
+                "time": 16.690274000167847,
+                "run_time": 16.690274000167847
+            },
+            {
+                "best_solution": null,
+                "time": 17.301191091537476,
+                "run_time": 17.301191091537476
+            },
+            {
+                "best_solution": null,
+                "time": 16.90183401107788,
+                "run_time": 16.90183401107788
+            },
+            {
+                "best_solution": null,
+                "time": 16.821588039398193,
+                "run_time": 16.821588039398193
+            }
+        ],
+        "avg_time": 17.078566002845765
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "one_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 16.954473972320557,
+                "run_time": 16.954473972320557
+            },
+            {
+                "best_solution": null,
+                "time": 17.055622100830078,
+                "run_time": 17.055622100830078
+            },
+            {
+                "best_solution": null,
+                "time": 16.92687201499939,
+                "run_time": 16.92687201499939
+            },
+            {
+                "best_solution": null,
+                "time": 17.411147117614746,
+                "run_time": 17.411147117614746
+            },
+            {
+                "best_solution": null,
+                "time": 16.996038913726807,
+                "run_time": 16.996038913726807
+            },
+            {
+                "best_solution": null,
+                "time": 16.716267108917236,
+                "run_time": 16.716267108917236
+            },
+            {
+                "best_solution": null,
+                "time": 16.71733808517456,
+                "run_time": 16.71733808517456
+            },
+            {
+                "best_solution": null,
+                "time": 16.744809865951538,
+                "run_time": 16.744809865951538
+            },
+            {
+                "best_solution": null,
+                "time": 17.07193398475647,
+                "run_time": 17.07193398475647
+            },
+            {
+                "best_solution": null,
+                "time": 16.977715015411377,
+                "run_time": 16.977715015411377
+            }
+        ],
+        "avg_time": 16.957221817970275
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.416487216949463,
+                "run_time": 17.416487216949463
+            },
+            {
+                "best_solution": null,
+                "time": 17.435245275497437,
+                "run_time": 17.435245275497437
+            },
+            {
+                "best_solution": null,
+                "time": 17.211017847061157,
+                "run_time": 17.211017847061157
+            },
+            {
+                "best_solution": null,
+                "time": 17.044687032699585,
+                "run_time": 17.044687032699585
+            },
+            {
+                "best_solution": null,
+                "time": 17.014410972595215,
+                "run_time": 17.014410972595215
+            },
+            {
+                "best_solution": null,
+                "time": 17.171265840530396,
+                "run_time": 17.171265840530396
+            },
+            {
+                "best_solution": null,
+                "time": 17.484175205230713,
+                "run_time": 17.484175205230713
+            },
+            {
+                "best_solution": null,
+                "time": 17.269538164138794,
+                "run_time": 17.269538164138794
+            },
+            {
+                "best_solution": null,
+                "time": 17.270801067352295,
+                "run_time": 17.270801067352295
+            },
+            {
+                "best_solution": null,
+                "time": 17.505921125411987,
+                "run_time": 17.505921125411987
+            }
+        ],
+        "avg_time": 17.282354974746703
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.532550811767578,
+                "run_time": 17.532550811767578
+            },
+            {
+                "best_solution": null,
+                "time": 16.856643199920654,
+                "run_time": 16.856643199920654
+            },
+            {
+                "best_solution": null,
+                "time": 17.038522958755493,
+                "run_time": 17.038522958755493
+            },
+            {
+                "best_solution": null,
+                "time": 17.131006956100464,
+                "run_time": 17.131006956100464
+            },
+            {
+                "best_solution": null,
+                "time": 17.15169882774353,
+                "run_time": 17.15169882774353
+            },
+            {
+                "best_solution": null,
+                "time": 17.284276008605957,
+                "run_time": 17.284276008605957
+            },
+            {
+                "best_solution": null,
+                "time": 17.23012113571167,
+                "run_time": 17.23012113571167
+            },
+            {
+                "best_solution": null,
+                "time": 17.449512243270874,
+                "run_time": 17.449512243270874
+            },
+            {
+                "best_solution": null,
+                "time": 17.47999095916748,
+                "run_time": 17.47999095916748
+            },
+            {
+                "best_solution": null,
+                "time": 17.078586101531982,
+                "run_time": 17.078586101531982
+            }
+        ],
+        "avg_time": 17.22329092025757
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "two_point",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.27021288871765,
+                "run_time": 17.27021288871765
+            },
+            {
+                "best_solution": null,
+                "time": 17.074106216430664,
+                "run_time": 17.074106216430664
+            },
+            {
+                "best_solution": null,
+                "time": 17.447755098342896,
+                "run_time": 17.447755098342896
+            },
+            {
+                "best_solution": null,
+                "time": 17.304518938064575,
+                "run_time": 17.304518938064575
+            },
+            {
+                "best_solution": null,
+                "time": 17.586786031723022,
+                "run_time": 17.586786031723022
+            },
+            {
+                "best_solution": null,
+                "time": 17.885474681854248,
+                "run_time": 17.885474681854248
+            },
+            {
+                "best_solution": null,
+                "time": 17.44011878967285,
+                "run_time": 17.44011878967285
+            },
+            {
+                "best_solution": null,
+                "time": 16.911372900009155,
+                "run_time": 16.911372900009155
+            },
+            {
+                "best_solution": null,
+                "time": 17.00662112236023,
+                "run_time": 17.00662112236023
+            },
+            {
+                "best_solution": null,
+                "time": 17.117406129837036,
+                "run_time": 17.117406129837036
+            }
+        ],
+        "avg_time": 17.304437279701233
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "one_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.640878200531006,
+                "run_time": 17.640878200531006
+            },
+            {
+                "best_solution": null,
+                "time": 17.58558487892151,
+                "run_time": 17.58558487892151
+            },
+            {
+                "best_solution": null,
+                "time": 17.783822059631348,
+                "run_time": 17.783822059631348
+            },
+            {
+                "best_solution": null,
+                "time": 17.648863077163696,
+                "run_time": 17.648863077163696
+            },
+            {
+                "best_solution": null,
+                "time": 17.762301206588745,
+                "run_time": 17.762301206588745
+            },
+            {
+                "best_solution": null,
+                "time": 17.880788326263428,
+                "run_time": 17.880788326263428
+            },
+            {
+                "best_solution": null,
+                "time": 17.652993202209473,
+                "run_time": 17.652993202209473
+            },
+            {
+                "best_solution": null,
+                "time": 17.83198070526123,
+                "run_time": 17.83198070526123
+            },
+            {
+                "best_solution": null,
+                "time": 17.677077054977417,
+                "run_time": 17.677077054977417
+            },
+            {
+                "best_solution": null,
+                "time": 17.814992904663086,
+                "run_time": 17.814992904663086
+            }
+        ],
+        "avg_time": 17.727928161621094
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "two_point",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 17.653544902801514,
+                "run_time": 17.653544902801514
+            },
+            {
+                "best_solution": null,
+                "time": 17.761556148529053,
+                "run_time": 17.761556148529053
+            },
+            {
+                "best_solution": null,
+                "time": 17.798010110855103,
+                "run_time": 17.798010110855103
+            },
+            {
+                "best_solution": null,
+                "time": 18.399680137634277,
+                "run_time": 18.399680137634277
+            },
+            {
+                "best_solution": null,
+                "time": 17.634582042694092,
+                "run_time": 17.634582042694092
+            },
+            {
+                "best_solution": null,
+                "time": 18.52822518348694,
+                "run_time": 18.52822518348694
+            },
+            {
+                "best_solution": null,
+                "time": 17.84138822555542,
+                "run_time": 17.84138822555542
+            },
+            {
+                "best_solution": null,
+                "time": 18.157875061035156,
+                "run_time": 18.157875061035156
+            },
+            {
+                "best_solution": null,
+                "time": 17.807656288146973,
+                "run_time": 17.807656288146973
+            },
+            {
+                "best_solution": null,
+                "time": 17.82700514793396,
+                "run_time": 17.82700514793396
+            }
+        ],
+        "avg_time": 17.940952324867247
+    },
+    {
+        "configuration": {
+            "bounds": [
+                -80,
+                80
+            ],
+            "precision": 8,
+            "vars_number": 2,
+            "pop_size": 1000,
+            "epochs": 200,
+            "selection_method": "tournament",
+            "selection_percentage": 0.5,
+            "tournament_size": 3,
+            "crossover_method": "uniform",
+            "crossover_prob": 0.5,
+            "mutation_method": "boundary",
+            "mutation_prob": 0.01,
+            "inversion_prob": 0.015,
+            "elite_percentage": 0.15,
+            "maximize": false
+        },
+        "results": [
+            {
+                "best_solution": null,
+                "time": 18.358136892318726,
+                "run_time": 18.358136892318726
+            },
+            {
+                "best_solution": null,
+                "time": 17.87255096435547,
+                "run_time": 17.87255096435547
+            },
+            {
+                "best_solution": null,
+                "time": 17.722931146621704,
+                "run_time": 17.722931146621704
+            },
+            {
+                "best_solution": null,
+                "time": 17.86198401451111,
+                "run_time": 17.86198401451111
+            },
+            {
+                "best_solution": null,
+                "time": 17.774250984191895,
+                "run_time": 17.774250984191895
+            },
+            {
+                "best_solution": null,
+                "time": 17.83908200263977,
+                "run_time": 17.83908200263977
+            },
+            {
+                "best_solution": null,
+                "time": 17.98485779762268,
+                "run_time": 17.98485779762268
+            },
+            {
+                "best_solution": null,
+                "time": 17.72433829307556,
+                "run_time": 17.72433829307556
+            },
+            {
+                "best_solution": null,
+                "time": 17.771397829055786,
+                "run_time": 17.771397829055786
+            },
+            {
+                "best_solution": null,
+                "time": 17.70956587791443,
+                "run_time": 17.70956587791443
+            }
+        ],
+        "avg_time": 17.861909580230712
+    }
+]
