@@ -1,4 +1,8 @@
+import matplotlib
+
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+
 import pandas as pd
 
 
@@ -23,7 +27,6 @@ def plot_iterations(filename, img_save_path=None, img_show=False):
         plt.show()
     else:
         plt.savefig(img_save_path)
-        
 
     plt.close()
 
@@ -52,6 +55,5 @@ def plot_mean_std(filename, img_save_path=None, img_show=False):
         plt.show()
     else:
         plt.savefig(img_save_path)
-        
 
     plt.close()
