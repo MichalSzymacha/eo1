@@ -8,3 +8,5 @@ __pycache__/*
 results
 results/*
 .DS_Store
+/ackley_results
+/cec2014_f5_results
