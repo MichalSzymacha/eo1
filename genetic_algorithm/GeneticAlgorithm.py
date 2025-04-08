@@ -1,3 +1,4 @@
+import copy
 import os
 import random
 import numpy as np
@@ -195,14 +196,44 @@ class GeneticAlgorithm:
         else:
             return chromosome
 
-    def _elite(self, new_population):
+    # def _elite(self):
+    #     temp = []
+    #     self.population.population.sort(key=lambda x: x.fitness, reverse=True)
+    #     elite_size = int(self.elite_percentage * self.pop_size)
+    #     elites = self.population.population[:elite_size]
+    #     # Dodajemy kopie osobników elity
+    #     for elite in elites:
+    #         copied = Individual(
+    #             self.population.size, self.vars_number, genes=np.copy(elite.genes)
+    #         )
+    #         copied.fitness = elite.fitness
+    #         copied.objective_value = elite.objective_value
+    #         temp.append(copied)
+
+    #     return temp
+
+    def _elite(self):
         """
         Dodaje elityzm do nowej populacji.
         """
         self._evaluate()
         self.population.population.sort(key=lambda x: x.fitness, reverse=True)
         elite_size = int(self.elite_percentage * self.pop_size)
-        new_population.extend(self.population.population[:elite_size])
+
+        array = copy.deepcopy(self.population.population[:elite_size])
+
+        # print("_elite\n")
+        # temp = []
+        # for i in self.population.population:
+        #     temp.append(i.fitness)
+        # print(temp)
+
+        # for i in new_population:
+        #     print(i.fitness)
+
+        # print("")
+
+        return array
 
     def _inversion(self, chromosome):
         """
@@ -222,7 +253,9 @@ class GeneticAlgorithm:
 
         for epoch in range(self.epochs):
             new_population = []
-            self._elite(new_population)
+            # print(len(self.population.population))
+            new_population = self._elite()
+            print("New population", len(new_population))
             parents = self._selection()
             parents_len = len(parents)
             while len(new_population) < self.pop_size:
@@ -239,9 +272,29 @@ class GeneticAlgorithm:
                 new_population.append(child2)
             if len(new_population) > self.pop_size:
                 new_population = new_population[: self.pop_size]
-            self.population.population = new_population
+
+            self.population.population = new_population.copy()
             self._evaluate()
-            best_individual = max(self.population.population, key=lambda x: x.fitness)
+            self.population.population.sort(key=lambda x: x.fitness, reverse=True)
+
+            print("Run\n")
+            temp = []
+            for i in self.population.population:
+                temp.append(i.fitness)
+
+            print(temp)
+
+            if self.maximize:
+                best_individual = max(
+                    self.population.population, key=lambda x: x.fitness
+                )
+            else:
+                """1 / (1 + abs(inv.objective_value))"""
+                best_individual = max(
+                    self.population.population, key=lambda x: x.fitness
+                )
+                best_individual.fitness = 1 / best_individual.fitness - 1
+
             mean = np.mean([ind.fitness for ind in self.population.population])
             std = np.std([ind.fitness for ind in self.population.population])
             save_results_to_csv(

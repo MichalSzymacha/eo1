@@ -64,39 +64,39 @@ class App(tk.Tk):
         self.geometry("500x650")
 
         # --- Wybór funkcji benchmarkowej ---
-        self.function_var = tk.StringVar(value="rastrigin")
+        self.function_var = tk.StringVar(value="ackley")
         self.create_dropdown(
             "Choose function", list(FUNCTIONS_MAP.keys()), self.function_var
         )
 
-        self.num_parameters_var = tk.IntVar(value=2)
+        self.num_parameters_var = tk.IntVar(value=10)
         self.create_input_field("Number of parameters", self.num_parameters_var)
 
         # --- Konfiguracja pól wejściowych ---
-        self.begin_range_var = tk.DoubleVar(value=-500)
-        self.end_range_var = tk.DoubleVar(value=500)
+        self.begin_range_var = tk.DoubleVar(value=-32)
+        self.end_range_var = tk.DoubleVar(value=32)
         self.create_input_field("Begin of the range", self.begin_range_var)
         self.create_input_field("End of the range", self.end_range_var)
 
         self.precision_var = tk.DoubleVar(value=5)
         self.create_input_field("Precision", self.precision_var)
 
-        self.population_var = tk.IntVar(value=15)
-        self.epochs_var = tk.IntVar(value=1000)
+        self.population_var = tk.IntVar(value=100)
+        self.epochs_var = tk.IntVar(value=100)
         self.create_input_field("Population", self.population_var)
         self.create_input_field("Epochs", self.epochs_var)
 
-        self.elite_percentage_var = tk.DoubleVar(value=0.15)
+        self.elite_percentage_var = tk.DoubleVar(value=0.01)
         self.cross_prob_var = tk.DoubleVar(value=0.5)
-        self.mutation_prob_var = tk.DoubleVar(value=0.01)
-        self.inversion_prob_var = tk.DoubleVar(value=0.015)
+        self.mutation_prob_var = tk.DoubleVar(value=0.3)
+        self.inversion_prob_var = tk.DoubleVar(value=0.2)
         self.create_input_field("Elite percentage", self.elite_percentage_var)
         self.create_input_field("Cross probability", self.cross_prob_var)
         self.create_input_field("Mutation probability", self.mutation_prob_var)
         self.create_input_field("Inversion probability", self.inversion_prob_var)
 
         # --- Wybór metody selekcji ---
-        self.selection_method_var = tk.StringVar(value="roulette")
+        self.selection_method_var = tk.StringVar(value="tournament")
         self.create_dropdown(
             "Selection method",
             ["roulette", "tournament", "best"],
@@ -104,7 +104,7 @@ class App(tk.Tk):
         )
         self.selection_percentage_var = tk.DoubleVar(value=0.5)
         self.create_input_field("Selection percentage", self.selection_percentage_var)
-        self.tournament_size_var = tk.IntVar(value=3)
+        self.tournament_size_var = tk.IntVar(value=5)
         self.create_input_field("Tournament size", self.tournament_size_var)
 
         # --- Wybór metody krzyżowania ---
@@ -325,12 +325,12 @@ class App(tk.Tk):
         }
         save_results_to_json(f"{dir_name}/wyniki.json", result_dict)
         plot_iterations(
-            f"{dir_name}/wyniki.csv", f"{dir_name}/wykres_iteracji.png", False
+            f"{dir_name}/wyniki.csv", f"{dir_name}/wykres_iteracji.png", True
         )
         plot_mean_std(
             f"{dir_name}/wyniki.csv",
             f"{dir_name}/wykres_sredniej_odchylenia.png",
-            False,
+            True,
         )
         return best_solution
 
